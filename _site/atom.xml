@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>/dev/null</title>
+ <link href="http://karpra.github.io/" rel="self"/>
+ <link href="http://karpra.github.io"/>
+ <updated>2014-09-16T19:50:48+00:00</updated>
+ <id>http://karpra.github.io</id>
+ <author>
+   <name>karthik</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Jekyll_introduction_ui</title>
+   <link href="http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui"/>
+   <updated>2014-09-16T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui</id>
+   <content type="html">&lt;p&gt;This is an example of a draft. Read more here: &lt;a href=&quot;http://jekyllrb.com/docs/drafts/&quot;&gt;http://jekyllrb.com/docs/drafts/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

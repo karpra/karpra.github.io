@@ -1,0 +1,12 @@
+
+http://karpra.github.io/404.html
+http://karpra.github.io/about.html
+http://karpra.github.io/archive.html
+http://karpra.github.io/atom.xml
+http://karpra.github.io/categories.html
+http://karpra.github.io/index.html
+http://karpra.github.io/search.html
+http://karpra.github.io/sitemap.txt
+http://karpra.github.io/tags.html
+
+http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui
