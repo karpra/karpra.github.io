@@ -1,6 +1,6 @@
 ---
 layout: post
-category : jekyll
+category : ui
 tagline: "Supporting tagline"
 tags : [intro,  jekyll]
 ---
