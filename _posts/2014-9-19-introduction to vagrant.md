@@ -13,6 +13,8 @@ Vagrant is an amazing dev productivity tool for managing virtual machines using 
     
 This would typically bring up the virtual machine 
 
+Please download vagrant [here](https://www.vagrantup.com/) 
+
 ## Motivation
 
 The main reasoning to use virtual machine during development is to isolate environments in a seperate container than messing up with different versions of jdk or python etc any sdks or multiple application servers creating conflicts etc & having to support different versions in host machine. I have been a big proponent of developing applications mimicing as much as running in typical isolated environments hosted in linux enviroments just as much finally the shipped product will ultimately run on it.
