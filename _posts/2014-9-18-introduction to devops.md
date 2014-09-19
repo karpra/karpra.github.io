@@ -22,6 +22,7 @@ constantly pushes the changes & change management is unavoidable and this it not
 
 Business has always demanded two things : - 
 
-*   Red
-*   Green
-*   Blue
+*   Application Development to be agile and nimble enough to constant changes in requirement.
+*   Operations team to deliver consistent stable runtime environment to host the application.
+*   
+
