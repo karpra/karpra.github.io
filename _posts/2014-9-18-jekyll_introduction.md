@@ -20,8 +20,8 @@ to configure my blog , code things in my blog using a templating engine called j
 
 [Jekyll](http://jekyllrb.com/)
 
-    `function(startBlogging){
-     return list.posts;
-    }`
+`function(startBlogging){
+  return list.posts;
+}`
 
 I will go ahead explain about blogging setup i did for jekyll and github pages is powered by jekyll behind the scene.
