@@ -5,7 +5,7 @@ tagline: "Supporting tagline"
 tags : [intro]
 ---
 
-Whats is Devops?
+# Whats is Devops?
 
 Development & Operations teams forging together is devops. When i say that let me explain the typical
 lifecyle activities of development team and operations team in getting any solution or application 
@@ -20,3 +20,8 @@ Development team starts developing the application which goes through typical SD
 defining the functional requirement of the application which believe it or not is always constantly changing business
 constantly pushes the changes & change management is unavoidable and this it not something new. Operations team are responsible to deliver a infrastructure for the application to be hosted and running in an stable environment for maximum uptime , throughput & performance defined by the SLA requirements of the application.
 
+Business has always demanded two things : - 
+
+*   Red
+*   Green
+*   Blue
