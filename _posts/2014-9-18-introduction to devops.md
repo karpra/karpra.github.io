@@ -1,25 +1,22 @@
 ---
 layout: post
-category : jekyll
+category : devops
 tagline: "Supporting tagline"
-tags : [intro,  jekyll]
+tags : [intro]
 ---
 
-I have been contemplating for a while to start blogging primary to write things that i have learnt and processed 
-over time & be able to write it for reference at some point of time.
+Whats is Devops?
 
-I was experimenting with blogger , wordpress , tumblr etc but never got traction or it just lacked that appeal 
-for me to lure me into the idea of blogging.
+Development & Operations teams forging together is devops. When i say that let me explain the typical
+lifecyle activities of development team and operations team in getting any solution or application 
+up & running available for the business to start using internally or externally (enterprise,b2b,b2c or consumer market).
 
-The minute i got to know about blogging using gitpages i got interested primary it was very simple to publish a 
-blog , yet it was  simple and minimilistic. Though assuming i am not going to write anything fabulous here than
-merely adding to digital footprint, but i thought it was worth mentioning my experiences for me to look as reference.
+Business typically are sponsors of any application or solution developed using a given platform ( eg : -python,php,java 
+or .net etc) to solve a given business problem. Now comes project inception & companies bring in different set of teams
+who for practical purposes have worked as seperate business unit within same organization who come together to solve 
+a combined task towards a result oriented goal.
 
-Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
-to configure my blog , code my post in my blog away like i was coding than mere writing.
+Development team starts developing the application which goes through typical SDLC process from Business Requirement
+defining the functional requirement of the application which believe it or not is always constantly changing business
+constantly pushes the changes & change management is unavoidable and this it not something new. Operations team are responsible to deliver a infrastructure for the application to be hosted and running in an stable environment for maximum uptime , throughput & performance defined by the SLA requirements of the application.
 
-what is Jekyll?
-
-Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
-
-Please refer to [Jekyll](http://jekyllrb.com/) website. 
