@@ -24,6 +24,7 @@ Jekyll is a simple, blog-aware, static site generator. It takes a template direc
 
 Please refer to [Jekyll](http://jekyllrb.com/) website. 
 
+Below is my way of showing i have started blogging , perhaps stupid but representing actions in code is an amazing feeling :)
 
 `printf(startBlogging())`
 
