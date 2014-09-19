@@ -35,7 +35,7 @@ Vagrant helped in process of providing a readily available box which can be adde
 
 ## Using Vagrant
 
-Vagrant provides set of already created boxes referred as base boxes.[vagrant base boxes](http://www.vagrantbox.es/)
+Vagrant provides set of already created boxes referred as base boxes.Please feel free to download the vagrant base box [here](http://www.vagrantbox.es/)
 
 You can download these bases boxes or few vagrant boxes are also provisioned in github projects.
 
