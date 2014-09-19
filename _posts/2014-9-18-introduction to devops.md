@@ -66,7 +66,6 @@ Few examples of tools are
 ## Conclusion
 DevOps improves the overall stability of your system, because there are more capable eyes on the effect of various changes. Because features can be more quickly delivered, there are less large upgrades that require downtime. Instead, changes are delivered in smaller, more manageable pieces that may not require downtime at all.
 
-* * *
 
 
 
