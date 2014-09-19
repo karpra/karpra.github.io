@@ -5,7 +5,7 @@ tagline: "Supporting tagline"
 tags : [intro,automation]
 ---
 
-## Whats is Devops?
+## What is Devops?
 
 Development & Operations teams forging together is devops. When i say that let me explain the typical
 lifecyle activities of development team and operations team in getting any solution or application 
