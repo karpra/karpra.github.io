@@ -16,16 +16,20 @@ blog , yet it was  simple and minimilistic. Though assuming i am not going to wr
 merely adding to digital footprint, but i thought it was worth mentioning my experiences for me to look as reference.
 
 Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
-to configure my blog , code my blog using a templating engine called jekyll.
+to configure my blog , code my post in my blog away like i was coding than mere writing.
 
-[Jekyll](http://jekyllrb.com/) uses a template engine to blog the posts from text to html using either Markdown or textile.
-Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+what is Jekyll?
 
-Use the `printf()` function.
-This is a normal paragraph:
+Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+
+[Jekyll](http://jekyllrb.com/) 
+
+
+`printf(startBlogging())`
+
 
     function startBloggin(){
       return list.posts();
     }
 
-I will go ahead explain about blogging setup i did for jekyll and github pages is powered by jekyll behind the scene.
+This blog is powered by github pages & it runs jekyll templates underneath to convert text files to html files.
