@@ -2,7 +2,7 @@
 layout: post
 category : devops
 tagline: "Supporting tagline"
-tags : [intro]
+tags : [intro,automation]
 ---
 
 # Whats is Devops?
@@ -51,7 +51,6 @@ Continous Integration is predominately owned by dev team & Continous Delivery is
 Few examples of tools are
 
 ### Continous Integration
-* * *
 1. Jenkins
 2. Hudson ( a fork of jenkins)
 3. Cruise Control
@@ -63,6 +62,9 @@ Few examples of tools are
 2. Puppet Labs
 3. SaltStack
 4. Ansible
+
+## Conclusion
+DevOps improves the overall stability of your system, because there are more capable eyes on the effect of various changes. Because features can be more quickly delivered, there are less large upgrades that require downtime. Instead, changes are delivered in smaller, more manageable pieces that may not require downtime at all.
 
 * * *
 
