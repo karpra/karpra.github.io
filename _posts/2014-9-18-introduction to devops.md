@@ -23,7 +23,7 @@ constantly pushes the changes & change management is unavoidable and this it not
 Business has always demanded these things : - 
 
 *   Application Development to be agile and nimble enough to constant changes in requirement.
-*   Operations team to deliver consistent stable runtime environment to host the application.
+*   Operations team to deliver consistent stable runtime environment to host the application efficiently.
   
 ## Delivery Model
 
@@ -37,6 +37,7 @@ Agile Methodology demanded few qualities of delivery process to be injected with
 
 1. *Continous Integration* - Its a way software development is buildable / repeatable & automated in process of integration solution delivered constantly for deployment ready enviornment.
 2. *Continous Delivery* - This enables IT both dev and ops to have repeated stable environment for business to use by infrastructure supporting the needs of application to be deployed in runtime.
+3. *Release Management* - 
 
 ## Organizational Challenges.
 
@@ -45,7 +46,23 @@ Today dev & ops team work seperately to deliver the value business demands. Busi
 
 ## Tools
 
+Continous Integration is predominately owned by dev team & Continous Delivery is worked out between release team and ops team.
 
+Few examples of tools are
+
+### Continous Integration
+* * *
+1. Jenkins
+2. Hudson ( a fork of jenkins)
+3. Cruise Control
+4. Travis CI
+5. BuildBot
+* * *
+### Continous Delivery( dev ops tools)
+1. Chef
+2. Puppet Labs
+3. SaltStack
+4. Ansible
 
 
 
