@@ -22,5 +22,10 @@ to configure my blog , code my blog using a templating engine called jekyll.
 Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
 
 Use the `printf()` function.
+This is a normal paragraph:
+
+    function startBloggin(){
+      return list.posts();
+    }
 
 I will go ahead explain about blogging setup i did for jekyll and github pages is powered by jekyll behind the scene.
