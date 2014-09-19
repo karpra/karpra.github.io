@@ -9,9 +9,6 @@ tags : [intro,automation]
 
 Vagrant is an amazing dev productivity tool for managing virtual machines using command line which lets run the virtual machine in headless mode. It is template based and can be extended to a standard box and its fast enough to boot the virtual machine using this tool.
 
-    vagrant up
-    
-This would typically bring up the virtual machine 
 
 Please download vagrant [here](https://www.vagrantup.com/) 
 
