@@ -57,7 +57,7 @@ Few examples of tools are
 3. Cruise Control
 4. Travis CI
 5. BuildBot
-* * *
+
 ### Continous Delivery( dev ops tools)
 1. Chef
 2. Puppet Labs
