@@ -19,6 +19,7 @@ Finally after crazy experiments in other blogging sites github pages kind of pul
 to configure my blog , code things in my blog using a templating engine called jekyll.
 
 [Jekyll](http://jekyllrb.com/)
+
     'function(startBlogging){
      return list.posts;
     }'
