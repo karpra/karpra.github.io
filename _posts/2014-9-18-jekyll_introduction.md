@@ -19,6 +19,8 @@ Finally after crazy experiments in other blogging sites github pages kind of pul
 to configure my blog , code things in my blog using a templating engine called jekyll.
 
 [Jekyll](http://jekyllrb.com/)
-[This link](http://example.net/) has no title attribute.
+    function(startBlogging){
+     return list.posts;
+    }
 
 I will go ahead explain about blogging setup i did for jekyll and github pages is powered by jekyll behind the scene.
