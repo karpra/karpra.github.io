@@ -20,9 +20,39 @@ Development team starts developing the application which goes through typical SD
 defining the functional requirement of the application which believe it or not is always constantly changing business
 constantly pushes the changes & change management is unavoidable and this it not something new. Operations team are responsible to deliver a infrastructure for the application to be hosted and running in an stable environment for maximum uptime , throughput & performance defined by the SLA requirements of the application.
 
-Business has always demanded two things : - 
+Business has always demanded these things : - 
 
 *   Application Development to be agile and nimble enough to constant changes in requirement.
 *   Operations team to deliver consistent stable runtime environment to host the application.
-*   
+  
+## Delivery Model
+
+Traditional Delivery Model is time consuming and problematic on top it much easier for application development team to be nimble
+but compromises quality of operations teams delivery for a stable enviornment. Either they need to choose to keep an older / unneeded infrastructure not being able to support runtime capability of application hosting (or) be adaptable to the change which has huge cost associated and time consuming.
+
+Software Delivery Model came with Agile methodology to support such changing app development / infrastructure change support system. Agile did solve in tracking progress which is quiker and faster was able to deliver quantifiable results in application development or product development. Since Agile demanded quicker wins in measurable progress now industry came up with Continous Integration & Continous Delivery for quicker wins for business to support the demands.
+
+
+Agile Methodology demanded few qualities of delivery process to be injected with to support the ever demanding landscape fo changes.
+
+1. *Continous Integration* - Its a way software development is buildable / repeatable & automated in process of integration solution delivered constantly for deployment ready enviornment.
+2. *Continous Delivery* - This enables IT both dev and ops to have repeated stable environment for business to use by infrastructure supporting the needs of application to be deployed in runtime.
+
+## Organizational Challenges.
+
+Today dev & ops team work seperately to deliver the value business demands. Business always views IT function as one department , though in reality its operated seperately and two teams within IT department. When the dev team is notified of changes to app development they go through process of change management and push in changes to their software delivery. Ops teams are notified later even if they are proactively notified of app development changes most likely they understand the changes in their infrastructure later & this leads to blame game between dev versus ops team not fulfilling the business needs on time or quality.
+
+
+## Tools
+
+
+
+
+
+
+
+
+
+
+
 
