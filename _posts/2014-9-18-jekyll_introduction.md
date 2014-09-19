@@ -18,6 +18,7 @@ merely adding to digital footprint, but i thought it was worth mentioning my exp
 Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
 to configure my blog , code things in my blog using a templating engine called jekyll.
 
-[Jekyll] (http://jekyllrb.com/)
+[Jekyll](http://jekyllrb.com/)
+[This link](http://example.net/) has no title attribute.
 
 I will go ahead explain about blogging setup i did for jekyll and github pages is powered by jekyll behind the scene.
