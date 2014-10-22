@@ -1,6 +1,6 @@
 ---
 layout: post
-category : web server
+category : server
 tagline: "Supporting tagline"
 tags : [intro,http server]
 ---
