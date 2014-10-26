@@ -27,7 +27,7 @@ Web Server on the other hand has only core http capabilities to render the html 
 
 The main difference between Apache which is process driven architecture compared to nginx which is event based architecture. So in essence nginx can serve more concurrent users utilizing the computers hardware effectively than apache providing high throughput for static contents. The reason i mentioned static contents is because of the fact that if its dymanic pages like php major bottleneck is in the plugin rather than the webserver itself.
 
-[id]: /nginx_arch.png "Nginx Architecture"
+![alt text](/assets/themes/img/nginx_arch.png "Nginx Architecture")
 
 Nginx as mentioned uses a event driven architecture , let me go little bit more to explain what it means by event driven architecture. Nginx ( aka Engine X) operates on a single thread , asynchornous & non bloking architecture. Traditional servers used a thread based model for every request a thread is spawnned which is blocking call & utilizes the CPU, Memory till the request is served with a response hence these are reffered as blocking calls. Apache uses thread based architecture & is dependant on the hardware to scale , unlike nginx which uses single threaded non blocking calls to serve the contents & is scalable to use the hardware effectively to produce better throughput service concurent users effectively.  
 
