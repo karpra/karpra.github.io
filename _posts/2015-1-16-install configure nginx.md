@@ -39,7 +39,7 @@ Now you can ssh into the machine based on the configuration of the Vagrant File 
 
     config.vm.network "private_network", ip: "192.168.33.10"
     
-            ssh vagrant@192.168.33.10 (or) vagrant ssh
+<pre><code>ssh vagrant@192.168.33.10 (or) vagrant ssh</code></pre>
     
 <h2>Install</h2>
 
