@@ -11,8 +11,8 @@ Nginx is one of the most popular web servers in the world and is responsible for
 
 
 <h2>Pre-requisties</h2>
-Vagrant
-VirtualBox
+1. Vagrant
+2. VirtualBox
 
 Please refer to my article on Vagrant & its use [here](http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/)
 
