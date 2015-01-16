@@ -38,8 +38,8 @@ Once this command is initiated the machine will start booting up and you should 
 Now you can ssh into the machine based on the configuration of the Vagrant File if you want to do it manually.
 
     config.vm.network "private_network", ip: "192.168.33.10"
-
-    > ssh vagrant@192.168.33.10 (or) vagrant ssh
+    
+            ssh vagrant@192.168.33.10 (or) vagrant ssh
     
 <h2>Install</h2>
 
