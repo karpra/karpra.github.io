@@ -59,8 +59,7 @@ You should see the nginx server running in the box & you can check if its runnin
         www-data  1097  1093  0 Jan15 ?        00:00:26 nginx: worker process
         vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
 
-So now should you go to the browser and type this
-        http://192.168.33.10/
+So now should you go to the browser and type this http://192.168.33.10/
 
 You should be able to see nginx running.
 
