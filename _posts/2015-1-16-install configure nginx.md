@@ -53,13 +53,13 @@ I have provisioned a ubuntu box using vagrant and i will go over details of inst
     
 You should see the nginx server running in the box & you can check if its running by using following command below.
 
-        vagrant@vagrant-ubuntu-trusty-64:~$ ps -ef | grep nginx
-        root      1093     1  0 Jan15 ?        00:00:00 nginx: master process /usr/sbin/nginx
-        www-data  1094  1093  0 Jan15 ?        00:00:24 nginx: worker process
-        www-data  1095  1093  0 Jan15 ?        00:00:00 nginx: worker process
-        www-data  1096  1093  0 Jan15 ?        00:00:26 nginx: worker process
-        www-data  1097  1093  0 Jan15 ?        00:00:26 nginx: worker process
-        vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
+    vagrant@vagrant-ubuntu-trusty-64:~$ ps -ef | grep nginx
+    root      1093     1  0 Jan15 ?        00:00:00 nginx: master process /usr/sbin/nginx
+    www-data  1094  1093  0 Jan15 ?        00:00:24 nginx: worker process
+    www-data  1095  1093  0 Jan15 ?        00:00:00 nginx: worker process
+    www-data  1096  1093  0 Jan15 ?        00:00:26 nginx: worker process
+    www-data  1097  1093  0 Jan15 ?        00:00:26 nginx: worker process
+    vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
 
 So now should you go to the browser and type this http://192.168.33.10/
 
