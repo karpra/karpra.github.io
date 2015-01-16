@@ -35,9 +35,11 @@ Once this command is initiated the machine will start booting up and you should 
         default: Warning: Connection refused. Retrying...
     ==> default: Machine booted and ready!
     
-Now you can ssh into the machine based on the configuration of the Vagrant File if you want to do it manually.
+Now you can ssh into the machine based on the configuration of the Vagrant File 
 
     config.vm.network "private_network", ip: "192.168.33.10"
+
+You can choose to ssh manually or use vagrant to ssh as mentioned below.
     
 <pre><code>ssh vagrant@192.168.33.10 (or) vagrant ssh</code></pre>
     
