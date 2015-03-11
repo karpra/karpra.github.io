@@ -2,7 +2,7 @@
 layout: post
 category : UI
 tagline: "Supporting tagline"
-tags : [intro,  jekyll]
+tags : [jekyll]
 ---
 
 I have been contemplating for a while to start blogging primary to write things that i have learnt and processed 
