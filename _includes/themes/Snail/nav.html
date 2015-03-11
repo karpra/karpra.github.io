@@ -2,9 +2,23 @@
      <div id="nav-i">
      </div>
 	<div id="nav-c">
-		<ul id="nav-list" style="width: 700px;">
-			<li id="home"><a href="{{ HOME_PATH }}">Home</a></li>
-			{% assign pages_list = site.pages %}
+		<ul id="nav-list" style="width: 1100px;">
+			<!--<li id="home"><a href="{{ HOME_PATH }}">Home</a></li> -->
+			<li id="vidu"><a href="{{ HOME_PATH }}"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a></li>
+			<li><a href="{{ BASE_PATH }}/archive.html"><i class="fa fa-archive"></i>&nbsp;Archive</a></li>
+			<li><a href="{{ BASE_PATH }}/categories.html"><i class="fa fa-tags"></i>&nbsp;Categories</a></li>
+			<!--<li><a href="{{ BASE_PATH }}/tags.html"><i class="fa fa-bookmark"></i>&nbsp;Tags</a></li>-->
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="{{ BASE_PATH }}/about.html"><i class="fa fa-user" style="align:right;"></i>&nbsp;About me</a></li>
+			<!--{% assign pages_list = site.pages %}
 			{% assign group = 'navigation' %}
 			{% for node in pages_list %}
 				{% if node.title != null %}
@@ -22,7 +36,7 @@
 				{% endif %}
 			 {% endfor %}
 			{% assign pages_list = nil %}
-			{% assign group = nil %}
+			{% assign group = nil %}-->
 		</ul>
 		
 		
