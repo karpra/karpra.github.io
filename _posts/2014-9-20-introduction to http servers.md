@@ -2,7 +2,7 @@
 layout: post
 category : server
 tagline: "Supporting tagline"
-tags : [intro,http server]
+tags : [server]
 ---
 
 ## What is Web (aka) Http Server?
