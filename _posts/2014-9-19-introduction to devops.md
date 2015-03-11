@@ -2,7 +2,7 @@
 layout: post
 category : devops
 tagline: "Supporting tagline"
-tags : [intro,automation]
+tags : [concept]
 ---
 
 ## What is Devops?
