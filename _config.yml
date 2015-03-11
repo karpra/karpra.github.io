@@ -9,8 +9,8 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  /dev/null 
-tagline: karpra's blog
+title :  /dev/random
+#tagline: karpra's blog
 
 # Information about author
 #
@@ -46,7 +46,7 @@ excerpt : teaser
 
 # The number of items displayed per page.
 #
-paginate : 5
+paginate : 10
 
 # The destination of the pagination pages
 #
