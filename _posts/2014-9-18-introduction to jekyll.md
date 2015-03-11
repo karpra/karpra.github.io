@@ -1,6 +1,6 @@
 ---
 layout: post
-category : blogging
+category : static site generator
 tagline: "Supporting tagline"
 tags : [jekyll]
 ---
