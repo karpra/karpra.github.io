@@ -1,6 +1,6 @@
 ---
 layout: post
-category : UI
+category : blogging
 tagline: "Supporting tagline"
 tags : [jekyll]
 ---
