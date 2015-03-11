@@ -2,7 +2,7 @@
 layout: post
 category : server
 tagline: "Supporting tagline"
-tags : [server]
+tags : [nginx]
 ---
 
 <h1>Introduction</h1>
