@@ -9,4 +9,9 @@ http://karpra.github.io/search.html
 http://karpra.github.io/sitemap.txt
 http://karpra.github.io/tags.html
 
-http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui
+http://karpra.github.io/server/2015/01/16/EngineX%20(aka)%20nginx
+http://karpra.github.io/server/2014/09/20/introduction%20to%20http%20servers
+http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant
+http://karpra.github.io/devops/2014/09/19/introduction%20to%20devops
+http://karpra.github.io/static%20site%20generator/2014/09/18/introduction%20to%20jekyll
+http://karpra.github.io/2014/01/16/introduction%20to%20continous%20integration

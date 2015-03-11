@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>/dev/null</title>
+	<title>/dev/random</title>
     
 	
 	<meta name="author" content="karthik">
@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="/assets/themes/Snail/css/static.css">
 	<link rel="stylesheet" href="/assets/themes/Snail/css/errors.css">
 	<link rel="stylesheet" href="/assets/themes/Snail/google-code-prettify/prettify.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 	<link rel="shortcut icon" href="/assets/themes/Snail/img/favicon.ico">
 	
@@ -119,8 +120,8 @@
 				
 <div class="page-title-inline">
 	
-	<h1>/dev/null </h1>
-	<h2>karpra's blog</h2>
+	<h1>/dev/random </h1>
+	
 	
 </div>
 <div class="cont932">
@@ -133,21 +134,423 @@
 				
 				<div class="journal-cat-box">
 
-<a href="/categories.html#lessons-ref" title="lessons">
-	lessons
+<a href="/categories.html#server-ref" title="server">
+	server
 
 </a>
 </div>
 				
 			</div>
 			<div class="journal-body">
-				<h1 class="journal-title"><a href="/lessons/2014/09/16/jekyll_introduction_ui">Jekyll_introduction_ui</a><span class="author">Supporting tagline</span></h1>
+				<h1 class="journal-title"><a href="/server/2015/01/16/EngineX%20(aka)%20nginx">Enginex (aka) nginx</a><span class="author">Supporting tagline</span></h1>
 				
-				<span class="teaser"><p>This is an example of a draft. Read more here: <a href="http://jekyllrb.com/docs/drafts/">http://jekyllrb.com/docs/drafts/</a></p>
+				<span class="teaser"><h1>Introduction</h1>
+
+<p>Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet. It is more resource-friendly than Apache in most cases and can be used as a web server or a reverse proxy.</p>
+
+<h2>Pre-Requisite</h2>
+<ol>
+  <li>Vagrant</li>
+  <li>VirtualBox</li>
+</ol>
+
+<p>Please refer to my article on Vagrant &amp; its use <a href="http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/">here</a></p>
+
+<p>Although I am provisioning a Ubuntu box , you are free to choose your preference of OS from the list of available
+<a href="http://www.vagrantbox.es/">Vagrant boxes</a></p>
+
+<pre><code>vagrant init ubuntu/trusty64
+vagrant up
+</code></pre>
+
+<p>Once this command is initiated the machine will start booting up and you should see something similar to the below command.</p>
+
+<pre><code>Bringing machine 'default' up with 'virtualbox' provider...
+==&gt; default: Checking if box 'ubuntu/trusty64' is up to date...
+==&gt; default: Resuming suspended VM...
+==&gt; default: Booting VM...
+==&gt; default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection refused. Retrying...
+==&gt; default: Machine booted and ready!
+</code></pre>
+
+<p>Now you can ssh into the machine based on the configuration of the Vagrant File</p>
+
+<pre><code>config.vm.network "private_network", ip: "192.168.33.10"
+</code></pre>
+
+<p>You can choose to ssh manually or use vagrant to ssh as mentioned below.</p>
+
+<pre><code>ssh vagrant@192.168.33.10 (or) vagrant ssh</code></pre>
+
+<h2>Install</h2>
+
+<p>I have provisioned a ubuntu box using vagrant and i will go over details of installation of nginx in the provisioned ubuntu linux.</p>
+
+<pre><code>vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get upgrade
+vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get update
+vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get install nginx
+</code></pre>
+
+<p>You should see the nginx server running in the box &amp; you can check if its running by using following command below.</p>
+
+<pre><code>vagrant@vagrant-ubuntu-trusty-64:~$ ps -ef | grep nginx
+root      1093     1  0 Jan15 ?        00:00:00 nginx: master process /usr/sbin/nginx
+www-data  1094  1093  0 Jan15 ?        00:00:24 nginx: worker process
+www-data  1095  1093  0 Jan15 ?        00:00:00 nginx: worker process
+www-data  1096  1093  0 Jan15 ?        00:00:26 nginx: worker process
+www-data  1097  1093  0 Jan15 ?        00:00:26 nginx: worker process
+vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
+</code></pre>
+
+<p>So now should you go to the browser and type this http://192.168.33.10/</p>
+
+<p>You should be able to see nginx running.</p>
+
 
 				
 				</span>
-				<span class="readmore"><a href="/lessons/2014/09/16/jekyll_introduction_ui">Read More</a></span>
+				<span class="readmore"><a href="/server/2015/01/16/EngineX%20(aka)%20nginx">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		
+		<div class="journal-article">
+			<div class="journal-post-info">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#server-ref" title="server">
+	server
+
+</a>
+</div>
+				
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="/server/2014/09/20/introduction%20to%20http%20servers">Introduction to http servers</a><span class="author">Supporting tagline</span></h1>
+				
+				<span class="teaser"><h2 id="what-is-web-aka-http-server">What is Web (aka) Http Server?</h2>
+
+<p>The primary function of a web server is to store, process and deliver web pages to clients. The communication between client and server takes place using the Hypertext Transfer Protocol (HTTP). Pages delivered are most frequently HTML documents, which may include images, style sheets and scripts in addition to text content premodinantely static content.</p>
+
+<p>Although it serve the dynamic content of html pages using php , python , asp plugin to serve the html pages with code embedded in them.</p>
+
+<h2 id="what-are-available-http-servers-">What are available Http Servers ?</h2>
+
+<p>IIS(propietary) , Apache Http Server , nginx , lighthttpd or GWS(propietary) are the popuar webservers in the market. For the sake of this discussion we will pick the key differences between apache and nginx webservers which are open source with more market share.</p>
+
+<h2 id="difference-between-web-server--application-server-">Difference between Web Server &amp; Application Server ?</h2>
+
+<p>This is one of most widely asked question for anyone not knowing the difference between the two types of servers. For sake of this discussion let me choose Apache Foundations http server(web server)  versus tomcat(appliaction server).</p>
+
+<p>Application server can also hsot web application and render it like web server , so you might as why is web server in place and what does it serve. Application Server is combination of many components atleast in JEE world like web component , ejb component(not available in tomcat) , jmx component etc , it also provides an API for the users to use them to interact with these components in building an application.</p>
+
+<p>Web Server on the other hand has only core http capabilities to render the html content to the client and communicating between the client and the static pages or the application in the backend. It also bring in features of session replication , load balancing between multiple backend applications based on client load , encapsulating your application server behind &amp; protect it from DDOS attacks or back channel hacking through the port or sql injection etc.</p>
+
+<h2 id="apache-vs-nginx">Apache Vs nginx</h2>
+
+<p>The main difference between Apache which is process driven architecture compared to nginx which is event based architecture. So in essence nginx can serve more concurrent users utilizing the computers hardware effectively than apache providing high throughput for static contents. The reason i mentioned static contents is because of the fact that if its dymanic pages like php major bottleneck is in the plugin rather than the webserver itself.</p>
+
+<p><img src="/assets/images/architecture.png" alt="My helpful screenshot" /></p>
+
+<p>Nginx as mentioned uses a event driven architecture , let me go little bit more to explain what it means by event driven architecture. Nginx ( aka Engine X) operates on a single thread , asynchornous &amp; non bloking architecture. Traditional servers used a thread based model for every request a thread is spawnned which is blocking call &amp; utilizes the CPU, Memory till the request is served with a response hence these are reffered as blocking calls. Apache uses thread based architecture &amp; is dependant on the hardware to scale , unlike nginx which uses single threaded non blocking calls to serve the contents &amp; is scalable to use the hardware effectively to produce better throughput service concurent users effectively.</p>
+
+<p>Apache recently added multi processing module to its release , but still uses threaded model. But it has been there for a long time with more documentation , support &amp; has more tools avaialble for different configuration needs &amp; lots of plugins are available which are tested and production ready.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<p>Web Servers bring in lots of features and has it place.</p>
+
+<ol>
+  <li>Load Balancing &amp; failover.</li>
+  <li>URL rewriting.</li>
+  <li>Virtual Hosts.</li>
+  <li>Reverse Proxy or Forward Proxy.</li>
+</ol>
+
+<p>Web Servers can act as a software load balancer between two back end servers using request counting or weighted traffic or pending request or round robin mechanism. It also acts like reverse proxy or forward proxy in between the client and actual application servers serving like an encapsulation in networking terms. It can help us run many servers in the same harward and isolating them virtually as seperate hosts in combination with loadbalaning feature of web servers.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Web Servers always has its place , the only thing to take into account during decision to choose is based on the actual requirement that the webserver will serve. If its serving a single application then nginx might serve its purpose better , although if the web server hosts multiple applications then Apache might be a better fit with its confiuguration capabilities with better documentation and support. If scalability is the only concern then nginx performs better than apache. There is no right web server it needed to experimented in trial and error basic and based on the analysis one must choose which one supports their application better.</p>
+
+				
+				</span>
+				<span class="readmore"><a href="/server/2014/09/20/introduction%20to%20http%20servers">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		
+		<div class="journal-article">
+			<div class="journal-post-info">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#devops-ref" title="devops">
+	devops
+
+</a>
+</div>
+				
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="/devops/2014/09/19/introduction%20to%20vagrant">Introduction to vagrant</a><span class="author">Supporting tagline</span></h1>
+				
+				<span class="teaser"><h2 id="what-is-vagrant">What is Vagrant?</h2>
+
+<p>Vagrant is an amazing dev productivity tool for managing virtual machines using command line which lets run the virtual machine in headless mode. It is template based and can be extended to a standard box and its fast enough to boot the virtual machine using this tool.</p>
+
+<p>Please download vagrant <a href="https://www.vagrantup.com/">here</a></p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>The main reasoning to use virtual machine during development is to isolate environments in a seperate container than messing up with different versions of jdk or python etc any sdks or multiple application servers creating conflicts etc &amp; having to support different versions in host machine. I have been a big proponent of developing applications mimicing as much as running in typical isolated environments hosted in linux enviroments just as much finally the shipped product will ultimately run on it.</p>
+
+<p>Ofcourse we can maintain isolation in case of python environments using <a href="http://virtualenv.readthedocs.org/en/latest/">virtualenv</a>
+&amp; run different version of jdk in case of java but have to constantly update the java home variable in mac or create a bash or cmd script to set the java home based on the version being used. I liked the idea of not having to manage version dependencies and freeze an environment to do development and not to worry about managing different version of software etc to be installed in host machine &amp; also should i migrate the virtual machine to another machine its straight forward and i can avoid going through process of installation of softwares etc &amp; i can replicate the virtual machine using export options.</p>
+
+<p>Since i am a big proponent of open source I started using <a href="https://www.virtualbox.org/">Virtual Box</a> , it solved environment isolation problem &amp; dependency issues aiding in keeping the host machine cleaner with no trace of software version installed for runtime , ofcourse it not entirely true as u need jdks or python versions installed for ide to use and compile code to be deployed for runtime container in vm.</p>
+
+<p>You can ofcourse use VMWare solution to provision a VM , i thought it was bulky for development environments. Sometimes u will need VMWare licensed software to run on mac which is what i use.</p>
+
+<h2 id="why-vagrant">Why Vagrant?</h2>
+
+<p>Before vagrant existed i use to provision a vm for a given OS lets say Linux 64 bit Ubuntu version , I will go about downloading the iso image &amp; installed in a virtual machine and then go about installing other softwares to keep the environment ready for code to be deployed for testing purpose. This ensured i had a linux environment hosting application just as much a smaller subset of production kind of environment ofcourse without benefits of clustering as i thought it was overkill to do development in a clustered environment unless the software or application has cluster aware features.</p>
+
+<p>This whole process was time consuming &amp; managing was difficult , but once created it had the same benefits of isolated linux enviornment running app servers or servers. I would probably keep a golden copy of virtual machine hard disk installed with os &amp; export and keep it ready to import for next use into another virutal machine though it had its own issues of lot of time in importing and exporting virtual machine hard disk as OVF file.</p>
+
+<p>Vagrant helped in process of providing a readily available box which can be added to vagrant environment which still uses virtual box but its much faster and quicker to add than import export. Also it helped not just provide base boxes for different OS but also help in running the virtual machines seemlessly in a headless fashion.</p>
+
+<h2 id="using-vagrant">Using Vagrant</h2>
+
+<p>Vagrant provides set of already created boxes referred as base boxes.Please feel free to download the vagrant base box <a href="http://www.vagrantbox.es/">here</a></p>
+
+<p>You can download these bases boxes or few vagrant boxes are also provisioned in github projects.</p>
+
+<p>I will create a vagant box and host in my github to try downloading at some point for reference.</p>
+
+<p>Once the base box is downloaded , we go about initializing the vagant file to use the box.</p>
+
+<pre><code>vagrant init baseboxurl
+</code></pre>
+
+<p>This should create a Vagrant File for you to edit and use to your needs.</p>
+
+<p>Customizing the vagrant file for usage</p>
+
+<pre><code>config.vm.box = "&lt;http://baseboxurl&gt;" 
+config.vm.network "private_network", ip: "192.168.66.66"
+config.vm.synced_folder "data", "/data/"
+</code></pre>
+
+<p>This is made part of private network to access the virtual machine using the given ip address &amp; then we create a sync folder between host and virtual machine. So we can transfer any code , downloadables or code artifacts in shared location using host ide and be able to build and deploy easily in virtual machine if administration console is not an option.</p>
+
+<p>Further you can add the base box and use it as reference to create another vagrant based virtual machine , the idea of base box is to be used like standard template.</p>
+
+<pre><code>vagrant add box ubuntubasebox
+</code></pre>
+
+<p>Once the box is avaiable in vagrant we can modify the Vagrant file to start using it directly from vagrant repository than looking up the reference from basebox url.</p>
+
+<pre><code>config.vm.box = "&lt;box name&gt;"
+</code></pre>
+
+<p>Starting the virtual machine using vagrant</p>
+
+<pre><code>vagrant up
+</code></pre>
+
+<p>Stopping the virtual machine using vagrant</p>
+
+<pre><code>vagrant halt
+</code></pre>
+
+<p>Once the virtual machine is up and running you can ssh into the ipaddress mentioned above and login to the linux machine.</p>
+
+<pre><code>username/password - vagrant/vagrant
+                  - root/vagrant
+</code></pre>
+
+<p>Once the container is ready you are free to install the software required and you can export a environment with database , app server , http servers etc and export them into a template &amp; distribute for easy usage.</p>
+
+				
+				</span>
+				<span class="readmore"><a href="/devops/2014/09/19/introduction%20to%20vagrant">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		
+		<div class="journal-article">
+			<div class="journal-post-info">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#devops-ref" title="devops">
+	devops
+
+</a>
+</div>
+				
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="/devops/2014/09/19/introduction%20to%20devops">Introduction to devops</a><span class="author">Supporting tagline</span></h1>
+				
+				<span class="teaser"><h2 id="what-is-devops">What is Devops?</h2>
+
+<p>Development &amp; Operations teams forging together is devops. When i say that let me explain the typical
+lifecyle activities of development team and operations team in getting any solution or application 
+up &amp; running available for the business to start using internally or externally (enterprise,b2b,b2c or consumer market).</p>
+
+<p>Business typically are sponsors of any application or solution developed using a given platform ( eg : -python,php,java 
+or .net etc) to solve a given business problem. Now comes project inception &amp; companies bring in different set of teams
+who for practical purposes have worked as seperate business unit within same organization who come together to solve 
+a combined task towards a result oriented goal.</p>
+
+<p>Development team starts developing the application which goes through typical SDLC process from Business Requirement
+defining the functional requirement of the application which believe it or not is always constantly changing business
+constantly pushes the changes &amp; change management is unavoidable and this it not something new. Operations team are responsible to deliver a infrastructure for the application to be hosted and running in an stable environment for maximum uptime , throughput &amp; performance defined by the SLA requirements of the application.</p>
+
+<p>Business has always demanded these things : -</p>
+
+<ul>
+  <li>Application Development to be agile and nimble enough to constant changes in requirement.</li>
+  <li>Operations team to deliver consistent stable runtime environment to host the application efficiently.</li>
+</ul>
+
+<h2 id="delivery-model">Delivery Model</h2>
+
+<p>Traditional Delivery Model is time consuming and problematic on top it much easier for application development team to be nimble
+but compromises quality of operations teams delivery for a stable enviornment. Either they need to choose to keep an older / unneeded infrastructure not being able to support runtime capability of application hosting (or) be adaptable to the change which has huge cost associated and time consuming.</p>
+
+<p>Software Delivery Model came with Agile methodology to support such changing app development / infrastructure change support system. Agile did solve in tracking progress which is quiker and faster was able to deliver quantifiable results in application development or product development. Since Agile demanded quicker wins in measurable progress now industry came up with Continous Integration &amp; Continous Delivery for quicker wins for business to support the demands.</p>
+
+<p>Agile Methodology demanded few qualities of delivery process to be injected with to support the ever demanding landscape fo changes.</p>
+
+<ol>
+  <li><em>Continous Integration</em> - Its a way software development is buildable / repeatable &amp; automated in process of integration solution delivered constantly for deployment ready enviornment.</li>
+  <li><em>Continous Delivery</em> - This enables IT both dev and ops to have repeated stable environment for business to use by infrastructure supporting the needs of application to be deployed in runtime.</li>
+  <li><em>Release Management</em> -</li>
+</ol>
+
+<h2 id="organizational-challenges">Organizational Challenges.</h2>
+
+<p>Today dev &amp; ops team work seperately to deliver the value business demands. Business always views IT function as one department , though in reality its operated seperately and two teams within IT department. When the dev team is notified of changes to app development they go through process of change management and push in changes to their software delivery. Ops teams are notified later even if they are proactively notified of app development changes most likely they understand the changes in their infrastructure later &amp; this leads to blame game between dev versus ops team not fulfilling the business needs on time or quality.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p>Continous Integration is predominately owned by dev team &amp; Continous Delivery is worked out between release team and ops team.</p>
+
+<p>Few examples of tools are</p>
+
+<h3 id="continous-integration">Continous Integration</h3>
+<ol>
+  <li>Jenkins</li>
+  <li>Hudson ( a fork of jenkins)</li>
+  <li>Cruise Control</li>
+  <li>Travis CI</li>
+  <li>BuildBot</li>
+</ol>
+
+<h3 id="continous-delivery-dev-ops-tools">Continous Delivery( dev ops tools)</h3>
+<ol>
+  <li>Chef</li>
+  <li>Puppet Labs</li>
+  <li>SaltStack</li>
+  <li>Ansible</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>DevOps improves the overall stability of your system, because there are more capable eyes on the effect of various changes. Because features can be more quickly delivered, there are less large upgrades that require downtime. Instead, changes are delivered in smaller, more manageable pieces that may not require downtime at all.</p>
+
+
+				
+				</span>
+				<span class="readmore"><a href="/devops/2014/09/19/introduction%20to%20devops">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		
+		<div class="journal-article">
+			<div class="journal-post-info">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#static site generator-ref" title="static site generator">
+	static site generator
+
+</a>
+</div>
+				
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="/static%20site%20generator/2014/09/18/introduction%20to%20jekyll">Introduction to jekyll</a><span class="author">Supporting tagline</span></h1>
+				
+				<span class="teaser"><p>I have been contemplating for a while to start blogging primary to write things that i have learnt and processed 
+over time &amp; be able to write it for reference at some point of time.</p>
+
+<p>I was experimenting with blogger , wordpress , tumblr etc but never got traction or it just lacked that appeal 
+for me to lure me into the idea of blogging.</p>
+
+<p>The minute i got to know about blogging using gitpages i got interested primary it was very simple to publish a 
+blog , yet it was  simple and minimilistic. Though assuming i am not going to write anything fabulous here than
+merely adding to digital footprint, but i thought it was worth mentioning my experiences for me to look as reference.</p>
+
+<p>Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
+to configure my blog , code my post in my blog away like i was coding than mere writing.</p>
+
+<p>what is Jekyll?</p>
+
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+
+<p>Please refer to <a href="http://jekyllrb.com/">Jekyll</a> website.</p>
+
+<p>Below is my way of showing i have started blogging , perhaps stupid but representing actions in code is an amazing feeling :)</p>
+
+<p><code>printf(startBlogging())</code></p>
+
+<pre><code>function startBloggin(){
+  return list.posts();
+}
+</code></pre>
+
+<p>This blog is powered by github pages &amp; it runs jekyll templates underneath to convert text files to html files.</p>
+
+				
+				</span>
+				<span class="readmore"><a href="/static%20site%20generator/2014/09/18/introduction%20to%20jekyll">Read More</a></span>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+		
+		<div class="journal-article">
+			<div class="journal-post-info">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#-ref" title="">
+	
+
+</a>
+</div>
+				
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title"><a href="/2014/01/16/introduction%20to%20continous%20integration">Introduction to continous integration</a><span class="author"></span></h1>
+				
+				<span class="teaser"><p>testing….</p>
+
+				
+				</span>
+				<span class="readmore"><a href="/2014/01/16/introduction%20to%20continous%20integration">Read More</a></span>
 			</div>
 		</div>
 		<div class="clearboth"></div>
@@ -181,8 +584,16 @@
 
   
      
-    	<li><a href="/categories.html#lessons-ref">
-    		lessons <span>1</span>
+    	<li><a href="/categories.html#static site generator-ref">
+    		static site generator <span>1</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#devops-ref">
+    		devops <span>2</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#server-ref">
+    		server <span>2</span>
     	</a></li>
     
   
@@ -265,7 +676,7 @@
 				<h4><a>Links</a></h4>
 				<ul>
 				 
-					<li><a href = "http://karpa.github.io/">karpra's blog</a></li>
+					<li><a href = "http://karpra.github.io/">karpra's blog</a></li>
 				
 				</ul>
 			</div>

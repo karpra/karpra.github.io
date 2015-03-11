@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>/dev/null</title>
+ <title>/dev/random</title>
  <link href="http://karpra.github.io/" rel="self"/>
  <link href="http://karpra.github.io"/>
- <updated>2014-09-16T19:50:48+00:00</updated>
+ <updated>2015-03-11T17:44:24+00:00</updated>
  <id>http://karpra.github.io</id>
  <author>
    <name>karthik</name>
@@ -13,11 +13,333 @@
 
  
  <entry>
-   <title>Jekyll_introduction_ui</title>
-   <link href="http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui"/>
-   <updated>2014-09-16T00:00:00+00:00</updated>
-   <id>http://karpra.github.io/lessons/2014/09/16/jekyll_introduction_ui</id>
-   <content type="html">&lt;p&gt;This is an example of a draft. Read more here: &lt;a href=&quot;http://jekyllrb.com/docs/drafts/&quot;&gt;http://jekyllrb.com/docs/drafts/&lt;/a&gt;&lt;/p&gt;
+   <title>Enginex (aka) nginx</title>
+   <link href="http://karpra.github.io/server/2015/01/16/EngineX%20(aka)%20nginx"/>
+   <updated>2015-01-16T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/server/2015/01/16/EngineX (aka) nginx</id>
+   <content type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet. It is more resource-friendly than Apache in most cases and can be used as a web server or a reverse proxy.&lt;/p&gt;
+
+&lt;h2&gt;Pre-Requisite&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Vagrant&lt;/li&gt;
+  &lt;li&gt;VirtualBox&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Please refer to my article on Vagrant &amp;amp; its use &lt;a href=&quot;http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Although I am provisioning a Ubuntu box , you are free to choose your preference of OS from the list of available
+&lt;a href=&quot;http://www.vagrantbox.es/&quot;&gt;Vagrant boxes&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant init ubuntu/trusty64
+vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once this command is initiated the machine will start booting up and you should see something similar to the below command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Bringing machine 'default' up with 'virtualbox' provider...
+==&amp;gt; default: Checking if box 'ubuntu/trusty64' is up to date...
+==&amp;gt; default: Resuming suspended VM...
+==&amp;gt; default: Booting VM...
+==&amp;gt; default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection refused. Retrying...
+==&amp;gt; default: Machine booted and ready!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can ssh into the machine based on the configuration of the Vagrant File&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.10&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can choose to ssh manually or use vagrant to ssh as mentioned below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh vagrant@192.168.33.10 (or) vagrant ssh&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;I have provisioned a ubuntu box using vagrant and i will go over details of installation of nginx in the provisioned ubuntu linux.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get upgrade
+vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get update
+vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get install nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see the nginx server running in the box &amp;amp; you can check if its running by using following command below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant@vagrant-ubuntu-trusty-64:~$ ps -ef | grep nginx
+root      1093     1  0 Jan15 ?        00:00:00 nginx: master process /usr/sbin/nginx
+www-data  1094  1093  0 Jan15 ?        00:00:24 nginx: worker process
+www-data  1095  1093  0 Jan15 ?        00:00:00 nginx: worker process
+www-data  1096  1093  0 Jan15 ?        00:00:26 nginx: worker process
+www-data  1097  1093  0 Jan15 ?        00:00:26 nginx: worker process
+vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So now should you go to the browser and type this http://192.168.33.10/&lt;/p&gt;
+
+&lt;p&gt;You should be able to see nginx running.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to http servers</title>
+   <link href="http://karpra.github.io/server/2014/09/20/introduction%20to%20http%20servers"/>
+   <updated>2014-09-20T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/server/2014/09/20/introduction to http servers</id>
+   <content type="html">&lt;h2 id=&quot;what-is-web-aka-http-server&quot;&gt;What is Web (aka) Http Server?&lt;/h2&gt;
+
+&lt;p&gt;The primary function of a web server is to store, process and deliver web pages to clients. The communication between client and server takes place using the Hypertext Transfer Protocol (HTTP). Pages delivered are most frequently HTML documents, which may include images, style sheets and scripts in addition to text content premodinantely static content.&lt;/p&gt;
+
+&lt;p&gt;Although it serve the dynamic content of html pages using php , python , asp plugin to serve the html pages with code embedded in them.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-available-http-servers-&quot;&gt;What are available Http Servers ?&lt;/h2&gt;
+
+&lt;p&gt;IIS(propietary) , Apache Http Server , nginx , lighthttpd or GWS(propietary) are the popuar webservers in the market. For the sake of this discussion we will pick the key differences between apache and nginx webservers which are open source with more market share.&lt;/p&gt;
+
+&lt;h2 id=&quot;difference-between-web-server--application-server-&quot;&gt;Difference between Web Server &amp;amp; Application Server ?&lt;/h2&gt;
+
+&lt;p&gt;This is one of most widely asked question for anyone not knowing the difference between the two types of servers. For sake of this discussion let me choose Apache Foundations http server(web server)  versus tomcat(appliaction server).&lt;/p&gt;
+
+&lt;p&gt;Application server can also hsot web application and render it like web server , so you might as why is web server in place and what does it serve. Application Server is combination of many components atleast in JEE world like web component , ejb component(not available in tomcat) , jmx component etc , it also provides an API for the users to use them to interact with these components in building an application.&lt;/p&gt;
+
+&lt;p&gt;Web Server on the other hand has only core http capabilities to render the html content to the client and communicating between the client and the static pages or the application in the backend. It also bring in features of session replication , load balancing between multiple backend applications based on client load , encapsulating your application server behind &amp;amp; protect it from DDOS attacks or back channel hacking through the port or sql injection etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;apache-vs-nginx&quot;&gt;Apache Vs nginx&lt;/h2&gt;
+
+&lt;p&gt;The main difference between Apache which is process driven architecture compared to nginx which is event based architecture. So in essence nginx can serve more concurrent users utilizing the computers hardware effectively than apache providing high throughput for static contents. The reason i mentioned static contents is because of the fact that if its dymanic pages like php major bottleneck is in the plugin rather than the webserver itself.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/architecture.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nginx as mentioned uses a event driven architecture , let me go little bit more to explain what it means by event driven architecture. Nginx ( aka Engine X) operates on a single thread , asynchornous &amp;amp; non bloking architecture. Traditional servers used a thread based model for every request a thread is spawnned which is blocking call &amp;amp; utilizes the CPU, Memory till the request is served with a response hence these are reffered as blocking calls. Apache uses thread based architecture &amp;amp; is dependant on the hardware to scale , unlike nginx which uses single threaded non blocking calls to serve the contents &amp;amp; is scalable to use the hardware effectively to produce better throughput service concurent users effectively.&lt;/p&gt;
+
+&lt;p&gt;Apache recently added multi processing module to its release , but still uses threaded model. But it has been there for a long time with more documentation , support &amp;amp; has more tools avaialble for different configuration needs &amp;amp; lots of plugins are available which are tested and production ready.&lt;/p&gt;
+
+&lt;h2 id=&quot;benefits&quot;&gt;Benefits&lt;/h2&gt;
+
+&lt;p&gt;Web Servers bring in lots of features and has it place.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Load Balancing &amp;amp; failover.&lt;/li&gt;
+  &lt;li&gt;URL rewriting.&lt;/li&gt;
+  &lt;li&gt;Virtual Hosts.&lt;/li&gt;
+  &lt;li&gt;Reverse Proxy or Forward Proxy.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Web Servers can act as a software load balancer between two back end servers using request counting or weighted traffic or pending request or round robin mechanism. It also acts like reverse proxy or forward proxy in between the client and actual application servers serving like an encapsulation in networking terms. It can help us run many servers in the same harward and isolating them virtually as seperate hosts in combination with loadbalaning feature of web servers.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Web Servers always has its place , the only thing to take into account during decision to choose is based on the actual requirement that the webserver will serve. If its serving a single application then nginx might serve its purpose better , although if the web server hosts multiple applications then Apache might be a better fit with its confiuguration capabilities with better documentation and support. If scalability is the only concern then nginx performs better than apache. There is no right web server it needed to experimented in trial and error basic and based on the analysis one must choose which one supports their application better.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to vagrant</title>
+   <link href="http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant"/>
+   <updated>2014-09-19T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/devops/2014/09/19/introduction to vagrant</id>
+   <content type="html">&lt;h2 id=&quot;what-is-vagrant&quot;&gt;What is Vagrant?&lt;/h2&gt;
+
+&lt;p&gt;Vagrant is an amazing dev productivity tool for managing virtual machines using command line which lets run the virtual machine in headless mode. It is template based and can be extended to a standard box and its fast enough to boot the virtual machine using this tool.&lt;/p&gt;
+
+&lt;p&gt;Please download vagrant &lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;The main reasoning to use virtual machine during development is to isolate environments in a seperate container than messing up with different versions of jdk or python etc any sdks or multiple application servers creating conflicts etc &amp;amp; having to support different versions in host machine. I have been a big proponent of developing applications mimicing as much as running in typical isolated environments hosted in linux enviroments just as much finally the shipped product will ultimately run on it.&lt;/p&gt;
+
+&lt;p&gt;Ofcourse we can maintain isolation in case of python environments using &lt;a href=&quot;http://virtualenv.readthedocs.org/en/latest/&quot;&gt;virtualenv&lt;/a&gt;
+&amp;amp; run different version of jdk in case of java but have to constantly update the java home variable in mac or create a bash or cmd script to set the java home based on the version being used. I liked the idea of not having to manage version dependencies and freeze an environment to do development and not to worry about managing different version of software etc to be installed in host machine &amp;amp; also should i migrate the virtual machine to another machine its straight forward and i can avoid going through process of installation of softwares etc &amp;amp; i can replicate the virtual machine using export options.&lt;/p&gt;
+
+&lt;p&gt;Since i am a big proponent of open source I started using &lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;Virtual Box&lt;/a&gt; , it solved environment isolation problem &amp;amp; dependency issues aiding in keeping the host machine cleaner with no trace of software version installed for runtime , ofcourse it not entirely true as u need jdks or python versions installed for ide to use and compile code to be deployed for runtime container in vm.&lt;/p&gt;
+
+&lt;p&gt;You can ofcourse use VMWare solution to provision a VM , i thought it was bulky for development environments. Sometimes u will need VMWare licensed software to run on mac which is what i use.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-vagrant&quot;&gt;Why Vagrant?&lt;/h2&gt;
+
+&lt;p&gt;Before vagrant existed i use to provision a vm for a given OS lets say Linux 64 bit Ubuntu version , I will go about downloading the iso image &amp;amp; installed in a virtual machine and then go about installing other softwares to keep the environment ready for code to be deployed for testing purpose. This ensured i had a linux environment hosting application just as much a smaller subset of production kind of environment ofcourse without benefits of clustering as i thought it was overkill to do development in a clustered environment unless the software or application has cluster aware features.&lt;/p&gt;
+
+&lt;p&gt;This whole process was time consuming &amp;amp; managing was difficult , but once created it had the same benefits of isolated linux enviornment running app servers or servers. I would probably keep a golden copy of virtual machine hard disk installed with os &amp;amp; export and keep it ready to import for next use into another virutal machine though it had its own issues of lot of time in importing and exporting virtual machine hard disk as OVF file.&lt;/p&gt;
+
+&lt;p&gt;Vagrant helped in process of providing a readily available box which can be added to vagrant environment which still uses virtual box but its much faster and quicker to add than import export. Also it helped not just provide base boxes for different OS but also help in running the virtual machines seemlessly in a headless fashion.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-vagrant&quot;&gt;Using Vagrant&lt;/h2&gt;
+
+&lt;p&gt;Vagrant provides set of already created boxes referred as base boxes.Please feel free to download the vagrant base box &lt;a href=&quot;http://www.vagrantbox.es/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can download these bases boxes or few vagrant boxes are also provisioned in github projects.&lt;/p&gt;
+
+&lt;p&gt;I will create a vagant box and host in my github to try downloading at some point for reference.&lt;/p&gt;
+
+&lt;p&gt;Once the base box is downloaded , we go about initializing the vagant file to use the box.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant init baseboxurl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This should create a Vagrant File for you to edit and use to your needs.&lt;/p&gt;
+
+&lt;p&gt;Customizing the vagrant file for usage&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.vm.box = &quot;&amp;lt;http://baseboxurl&amp;gt;&quot; 
+config.vm.network &quot;private_network&quot;, ip: &quot;192.168.66.66&quot;
+config.vm.synced_folder &quot;data&quot;, &quot;/data/&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is made part of private network to access the virtual machine using the given ip address &amp;amp; then we create a sync folder between host and virtual machine. So we can transfer any code , downloadables or code artifacts in shared location using host ide and be able to build and deploy easily in virtual machine if administration console is not an option.&lt;/p&gt;
+
+&lt;p&gt;Further you can add the base box and use it as reference to create another vagrant based virtual machine , the idea of base box is to be used like standard template.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant add box ubuntubasebox
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once the box is avaiable in vagrant we can modify the Vagrant file to start using it directly from vagrant repository than looking up the reference from basebox url.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;config.vm.box = &quot;&amp;lt;box name&amp;gt;&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Starting the virtual machine using vagrant&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Stopping the virtual machine using vagrant&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vagrant halt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once the virtual machine is up and running you can ssh into the ipaddress mentioned above and login to the linux machine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;username/password - vagrant/vagrant
+                  - root/vagrant
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once the container is ready you are free to install the software required and you can export a environment with database , app server , http servers etc and export them into a template &amp;amp; distribute for easy usage.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to devops</title>
+   <link href="http://karpra.github.io/devops/2014/09/19/introduction%20to%20devops"/>
+   <updated>2014-09-19T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/devops/2014/09/19/introduction to devops</id>
+   <content type="html">&lt;h2 id=&quot;what-is-devops&quot;&gt;What is Devops?&lt;/h2&gt;
+
+&lt;p&gt;Development &amp;amp; Operations teams forging together is devops. When i say that let me explain the typical
+lifecyle activities of development team and operations team in getting any solution or application 
+up &amp;amp; running available for the business to start using internally or externally (enterprise,b2b,b2c or consumer market).&lt;/p&gt;
+
+&lt;p&gt;Business typically are sponsors of any application or solution developed using a given platform ( eg : -python,php,java 
+or .net etc) to solve a given business problem. Now comes project inception &amp;amp; companies bring in different set of teams
+who for practical purposes have worked as seperate business unit within same organization who come together to solve 
+a combined task towards a result oriented goal.&lt;/p&gt;
+
+&lt;p&gt;Development team starts developing the application which goes through typical SDLC process from Business Requirement
+defining the functional requirement of the application which believe it or not is always constantly changing business
+constantly pushes the changes &amp;amp; change management is unavoidable and this it not something new. Operations team are responsible to deliver a infrastructure for the application to be hosted and running in an stable environment for maximum uptime , throughput &amp;amp; performance defined by the SLA requirements of the application.&lt;/p&gt;
+
+&lt;p&gt;Business has always demanded these things : -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Application Development to be agile and nimble enough to constant changes in requirement.&lt;/li&gt;
+  &lt;li&gt;Operations team to deliver consistent stable runtime environment to host the application efficiently.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;delivery-model&quot;&gt;Delivery Model&lt;/h2&gt;
+
+&lt;p&gt;Traditional Delivery Model is time consuming and problematic on top it much easier for application development team to be nimble
+but compromises quality of operations teams delivery for a stable enviornment. Either they need to choose to keep an older / unneeded infrastructure not being able to support runtime capability of application hosting (or) be adaptable to the change which has huge cost associated and time consuming.&lt;/p&gt;
+
+&lt;p&gt;Software Delivery Model came with Agile methodology to support such changing app development / infrastructure change support system. Agile did solve in tracking progress which is quiker and faster was able to deliver quantifiable results in application development or product development. Since Agile demanded quicker wins in measurable progress now industry came up with Continous Integration &amp;amp; Continous Delivery for quicker wins for business to support the demands.&lt;/p&gt;
+
+&lt;p&gt;Agile Methodology demanded few qualities of delivery process to be injected with to support the ever demanding landscape fo changes.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Continous Integration&lt;/em&gt; - Its a way software development is buildable / repeatable &amp;amp; automated in process of integration solution delivered constantly for deployment ready enviornment.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Continous Delivery&lt;/em&gt; - This enables IT both dev and ops to have repeated stable environment for business to use by infrastructure supporting the needs of application to be deployed in runtime.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Release Management&lt;/em&gt; -&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;organizational-challenges&quot;&gt;Organizational Challenges.&lt;/h2&gt;
+
+&lt;p&gt;Today dev &amp;amp; ops team work seperately to deliver the value business demands. Business always views IT function as one department , though in reality its operated seperately and two teams within IT department. When the dev team is notified of changes to app development they go through process of change management and push in changes to their software delivery. Ops teams are notified later even if they are proactively notified of app development changes most likely they understand the changes in their infrastructure later &amp;amp; this leads to blame game between dev versus ops team not fulfilling the business needs on time or quality.&lt;/p&gt;
+
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;Continous Integration is predominately owned by dev team &amp;amp; Continous Delivery is worked out between release team and ops team.&lt;/p&gt;
+
+&lt;p&gt;Few examples of tools are&lt;/p&gt;
+
+&lt;h3 id=&quot;continous-integration&quot;&gt;Continous Integration&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Jenkins&lt;/li&gt;
+  &lt;li&gt;Hudson ( a fork of jenkins)&lt;/li&gt;
+  &lt;li&gt;Cruise Control&lt;/li&gt;
+  &lt;li&gt;Travis CI&lt;/li&gt;
+  &lt;li&gt;BuildBot&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;continous-delivery-dev-ops-tools&quot;&gt;Continous Delivery( dev ops tools)&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Chef&lt;/li&gt;
+  &lt;li&gt;Puppet Labs&lt;/li&gt;
+  &lt;li&gt;SaltStack&lt;/li&gt;
+  &lt;li&gt;Ansible&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;DevOps improves the overall stability of your system, because there are more capable eyes on the effect of various changes. Because features can be more quickly delivered, there are less large upgrades that require downtime. Instead, changes are delivered in smaller, more manageable pieces that may not require downtime at all.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to jekyll</title>
+   <link href="http://karpra.github.io/static%20site%20generator/2014/09/18/introduction%20to%20jekyll"/>
+   <updated>2014-09-18T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/static%20site%20generator/2014/09/18/introduction to jekyll</id>
+   <content type="html">&lt;p&gt;I have been contemplating for a while to start blogging primary to write things that i have learnt and processed 
+over time &amp;amp; be able to write it for reference at some point of time.&lt;/p&gt;
+
+&lt;p&gt;I was experimenting with blogger , wordpress , tumblr etc but never got traction or it just lacked that appeal 
+for me to lure me into the idea of blogging.&lt;/p&gt;
+
+&lt;p&gt;The minute i got to know about blogging using gitpages i got interested primary it was very simple to publish a 
+blog , yet it was  simple and minimilistic. Though assuming i am not going to write anything fabulous here than
+merely adding to digital footprint, but i thought it was worth mentioning my experiences for me to look as reference.&lt;/p&gt;
+
+&lt;p&gt;Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
+to configure my blog , code my post in my blog away like i was coding than mere writing.&lt;/p&gt;
+
+&lt;p&gt;what is Jekyll?&lt;/p&gt;
+
+&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.&lt;/p&gt;
+
+&lt;p&gt;Please refer to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; website.&lt;/p&gt;
+
+&lt;p&gt;Below is my way of showing i have started blogging , perhaps stupid but representing actions in code is an amazing feeling :)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;printf(startBlogging())&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function startBloggin(){
+  return list.posts();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This blog is powered by github pages &amp;amp; it runs jekyll templates underneath to convert text files to html files.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to continous integration</title>
+   <link href="http://karpra.github.io/2014/01/16/introduction%20to%20continous%20integration"/>
+   <updated>2014-01-16T00:00:00+00:00</updated>
+   <id>http://karpra.github.io/2014/01/16/introduction to continous integration</id>
+   <content type="html">&lt;p&gt;testing….&lt;/p&gt;
 </content>
  </entry>
  
