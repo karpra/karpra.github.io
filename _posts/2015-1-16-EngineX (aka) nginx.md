@@ -2,7 +2,7 @@
 layout: post
 category : server
 tagline: "Supporting tagline"
-tags : [install,http server]
+tags : [server]
 ---
 
 <h1>Introduction</h1>
