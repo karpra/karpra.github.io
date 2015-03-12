@@ -10,7 +10,7 @@ tags : [nginx]
 
 Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet. It is more resource-friendly than Apache in most cases and can be used as a web server or a reverse proxy.
 
-I am going to create a Virtual Machine which will run Linux OS in our case Ubuntu Linux 64 bit ( Trusty for version 14.04 ) for sake of mimicking as much close to production environment. I have used __Vagrant__ for managing my virtual machine and provisioning it for I can be saved from hastle of downloading a Ubuntu Linux ISO and installing on newly created Virtual Machine. 
+I am going to create a Virtual Machine which will run Linux OS in our case Ubuntu Linux 64 bit ( Trusty for version 14.04 ) for sake of mimicking an environment as much close to real production system. I have used __Vagrant__ for managing my virtual machine and provisioning it for I can be saved from hastle of downloading a Ubuntu Linux ISO and installing on newly created Virtual Machine. 
 
 ## Pre-Requisite ##
 1. __Vagrant__
