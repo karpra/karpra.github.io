@@ -4,7 +4,6 @@ category : server
 tags : [nginx]
 ---
 
-# Installing nginx in Ubuntu 14.04 #
 
 ## Introduction ##
 
