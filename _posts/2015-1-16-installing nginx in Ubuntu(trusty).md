@@ -4,18 +4,19 @@ category : server
 tags : [nginx]
 ---
 
-<h1>Installing nginx in Ubuntu 14.04</h1>
+# Installing nginx in Ubuntu 14.04 #
 
-<h2> Introduction </h2>
+## Introduction ##
 
 Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet. It is more resource-friendly than Apache in most cases and can be used as a web server or a reverse proxy.
 
+I am going to create a Virtual Machine which will run Linux OS in our case Ubuntu Linux 64 bit ( Trusty for version 14.04 ) for sake of mimicking as much close to production environment. I have used __Vagrant__ for managing my virtual machine and provisioning it for I can be saved from hastle of downloading a Ubuntu Linux ISO and installing on newly created Virtual Machine. 
 
-<h2>Pre-Requisite</h2>
-1. Vagrant
-2. VirtualBox
+## Pre-Requisite ##
+1. __Vagrant__
+2. __VirtualBox__
 
-Please refer to my article on Vagrant & its use [here](http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/)
+If you are not familiar with Vagrant ,Please refer to my article on Vagrant & its use [here](http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/)
 
 Although I am provisioning a Ubuntu box , you are free to choose your preference of OS from the list of available
 [Vagrant boxes](http://www.vagrantbox.es/)
@@ -35,16 +36,32 @@ Once this command is initiated the machine will start booting up and you should 
         default: SSH auth method: private key
         default: Warning: Connection refused. Retrying...
     ==> default: Machine booted and ready!
+
+You can ssh into the Virtual Machine by using the below command.
+		
+	vagrant ssh
+
+You can run command to check the ipaddress of the machine using
+		
+	ifconfig
+
+Vagrant assigns a ip address by default from your router or DHCP Server , which is dynamic.
+But for the sake of experimentation we do not need to go through the details of DHCP Configuration , although
+we can define out own private network for you to access it on the machine you have created your virtual machine.
     
-Now you can ssh into the machine based on the configuration of the Vagrant File 
+You can edit your Vagrantfile & uncomment the below line and assign a ip address like 192.168.33.10
 
     config.vm.network "private_network", ip: "192.168.33.10"
+ 
+ Once you do that you should load the recent changed by using the below command
+ 
+	 vagrant reload (or) vagrant halt followed by vagrant start
 
-You can choose to ssh manually or use vagrant to ssh as mentioned below.
+You can continue to use vagrant ssh or ssh manually using below command in terminal or putty( in windows).
     
-<pre><code>ssh vagrant@192.168.33.10 (or) vagrant ssh</code></pre>
+	ssh vagrant@192.168.33.10 (or) vagrant ssh
     
-<h2>Install</h2>
+##  Install ##
 
 I have provisioned a ubuntu box using vagrant and i will go over details of installation of nginx in the provisioned ubuntu linux.
 
@@ -64,12 +81,4 @@ You should see the nginx server running in the box & you can check if its runnin
 
 So now should you go to the browser and type this http://192.168.33.10/
 
-You should be able to see nginx running.
-
-
-
-
-
-
-
-
+You should be able to see nginx serving and displaying something on the browser.
