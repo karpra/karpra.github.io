@@ -4,6 +4,7 @@ category : devops
 tagline: "Supporting tagline"
 tags : [automation]
 ---
+<br/>
 
 ## What is Vagrant?
 
