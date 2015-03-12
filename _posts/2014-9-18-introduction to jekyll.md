@@ -1,24 +1,19 @@
 ---
 layout: post
 category : static site generator
-tagline: "Supporting tagline"
 tags : [jekyll]
 ---
 
-I have been contemplating for a while to start blogging primary to write things that i have learnt and processed 
-over time & be able to write it for reference at some point of time.
+I have been contemplating to start a personal blog which could capture all the tweaks , hacks I keep myself induldged in from time to time during my free time. It was purely experimental or to get my hands dirty due to my curiousity of something thats new in the IT field mostly open source which has the power to distrupt the market creating vendor neutrality. I have been a
+big proponent of open source community in general perhaps incubated from the start of my career as i started out professionally in java world but not limitting myself to some mainframes a little while ago.
 
-I was experimenting with blogger , wordpress , tumblr etc but never got traction or it just lacked that appeal 
-for me to lure me into the idea of blogging.
+After multiple failed attempts trying to create by own technical blog experimenting with popoluar blogging engines like blogger, wordpress , tumblr I had given up the idea of starting my own blog until i stumbled upon static site generators. It seemed like a good idea at the moment for me to start blogging as it seemed very simple and was readily available for me to write the blog as much like i was logging information in a scrap book. The added appeal was that i could write my blog using Markdown or Liquid Templating Engines.
 
-The minute i got to know about blogging using gitpages i got interested primary it was very simple to publish a 
-blog , yet it was  simple and minimilistic. Though assuming i am not going to write anything fabulous here than
-merely adding to digital footprint, but i thought it was worth mentioning my experiences for me to look as reference.
+Also the biggest luring benefit remains the possibility of publishing your blog quickly as and when you make changed was a great benefit in my opinion. Git is a source version control system which is big proponent of distributed version control system unlike traditional client/server source code version systems like Subversion , CVS etc. Now your blog gets published right out of the version control without me having to run a http server or build server was a big boon.
 
-Finally after crazy experiments in other blogging sites github pages kind of pulled me into blogging coz i was able
-to configure my blog , code my post in my blog away like i was coding than mere writing.
+You should refer to github for creating a repository of your code which can live in the cloud and it remains available for public much like open source strategy. Although I not going to write anything great in my blog , but was worth trying to document it for my purpose as reference or a means for me to transfer knowledge i have acquired over years being in this industry. It is my way of thanking many who have helped me learn things for without them I would never be who i am today.
 
-what is Jekyll?
+#what is Jekyll?
 
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
 
@@ -26,11 +21,11 @@ Please refer to [Jekyll](http://jekyllrb.com/) website.
 
 Below is my way of showing i have started blogging , perhaps stupid but representing actions in code is an amazing feeling :)
 
-`printf(startBlogging())`
-
-
-    function startBloggin(){
-      return list.posts();
-    }
+        function startBloggin(){
+            return list.posts();
+        }
+        
+        printf(startBlogging())
+    
 
 This blog is powered by github pages & it runs jekyll templates underneath to convert text files to html files.
