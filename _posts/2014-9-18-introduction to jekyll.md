@@ -3,6 +3,7 @@ layout: post
 category : static site generator
 tags : [jekyll]
 ---
+<br/>
 
 I have been contemplating to start a personal blog which could capture all the tweaks , hacks I keep myself induldged in from time to time during my free time. It was purely experimental or to get my hands dirty with new things in the industry mostly open source which has the power to distrupt the market creating vendor neutrality. I have been a big proponent of open source community in general perhaps incubated from the start of my career as i started out professionally in java world , although i did have brief stint with mainframe as well.
 
