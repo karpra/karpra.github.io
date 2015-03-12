@@ -11,7 +11,7 @@ After multiple failed attempts trying to create by own technical blog experiment
 
 Also the biggest luring benefit remains the possibility of publishing your blog quickly as and when you make changed was a great benefit in my opinion. Git is a source version control system which is big proponent of distributed version control system unlike traditional client/server source code version systems like Subversion , CVS etc. Now your blog gets published right out of the version control without me having to run a http server or build server was a big boon.
 
-You should refer to github for creating a repository of your code which can live in the cloud and it remains available for public much like open source strategy. Although I not going to write anything great in my blog , but was worth trying to document it for my purpose as reference or a means for me to transfer knowledge i have acquired over years being in this industry. It is my way of thanking many who have helped me learn things for without them I would never be who i am today.
+You should refer to github for creating a repository of your code which can live in the cloud and it remains available for public much like open source strategy. Although I not going to write anything great in my blog , but was worth trying to document it for my purpose as reference or a means for me to transfer knowledge i have acquired over years being in this industry. It is my way of __thanking many__ who have helped me learn things for without them I would never be who i am today.
 
 #what is Jekyll?
 
