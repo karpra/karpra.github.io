@@ -61,6 +61,7 @@ You can continue to use vagrant ssh or ssh manually using below command in termi
     
 	ssh vagrant@192.168.33.10 (or) vagrant ssh
     
+    
 ##  Install ##
 
 I have provisioned a ubuntu box using vagrant and i will go over details of installation of nginx in the provisioned ubuntu linux.
