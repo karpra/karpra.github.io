@@ -60,7 +60,8 @@ You can edit your Vagrantfile & uncomment the below line and assign a ip address
 You can continue to use vagrant ssh or ssh manually using below command in terminal or putty( in windows).
     
 	ssh vagrant@192.168.33.10 (or) vagrant ssh
-    
+
+You should see the same result.
     
 ##  Install ##
 
