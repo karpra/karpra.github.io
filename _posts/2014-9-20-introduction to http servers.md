@@ -3,7 +3,6 @@ layout: post
 category : server
 tags : [nginx vs apache]
 ---
-<br/>
 
 ## What is Web (aka) Http Server?
 
