@@ -3,7 +3,6 @@ layout: post
 category : devops
 tags : [concept]
 ---
-<br/>
 
 ## What is Devops?
 
