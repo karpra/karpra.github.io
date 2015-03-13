@@ -1,7 +1,6 @@
 ---
 layout: post
 category : server
-tagline: "Supporting tagline"
 tags : [nginx vs apache]
 ---
 <br/>
