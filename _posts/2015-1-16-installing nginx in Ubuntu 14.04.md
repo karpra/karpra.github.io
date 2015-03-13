@@ -4,7 +4,6 @@ category : server
 tags : [nginx]
 ---
 
-<br/>
 
 ## Introduction ##
 
