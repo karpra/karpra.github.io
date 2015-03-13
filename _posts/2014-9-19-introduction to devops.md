@@ -1,7 +1,6 @@
 ---
 layout: post
 category : devops
-tagline: "Supporting tagline"
 tags : [concept]
 ---
 <br/>
