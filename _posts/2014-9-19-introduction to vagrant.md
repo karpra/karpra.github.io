@@ -3,7 +3,6 @@ layout: post
 category : devops
 tags : [automation]
 ---
-<br/>
 
 ## What is Vagrant?
 
