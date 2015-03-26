@@ -5,7 +5,11 @@ tags : [devops]
 ---
 
 ## What is CI (Continous Integration)?
-<center>![process]({{ site.baseurl }}/assets/images/01_16_2015_1.jpg)<center>
+![process]({{ site.baseurl }}/assets/images/01_16_2015_1.jpg){.callout}
+
+.callout {
+    float: right;
+}
 
 ## Why CI?
 
