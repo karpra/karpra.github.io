@@ -7,4 +7,4 @@ tags : [devops]
 
 
 
-![process]({{ site.baseurl }}/assets/images/01_16_2015_1.jpeg)
+![process]({{ site.baseurl }}/assets/images/01_16_2015_1.jpg)
