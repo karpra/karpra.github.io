@@ -1,7 +1,7 @@
 ---
 layout: post
 category : devops
-tags : [devops]
+tags : [concept]
 ---
 
 ## What is CI (Continous Integration)?
