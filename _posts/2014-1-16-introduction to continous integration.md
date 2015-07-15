@@ -1,6 +1,6 @@
 ---
 layout: post
-category : devops
+category : automation
 tags : [concept]
 ---
 
