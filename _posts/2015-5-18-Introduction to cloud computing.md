@@ -7,6 +7,6 @@ tags : [concept]
 # What is Cloud Computing?
 
 # Models of Cloud Computing ?
-+ IaaS
-+ PaaS
-+ SaaS
++ *IaaS*
++ *PaaS*
++ *SaaS*
