@@ -1,7 +1,7 @@
 ---
 layout: post
-category : cheatsheet
-tags : [markdown]
+category : jekyll
+tags : [cheatsheet]
 ---
 
 # Typography 
