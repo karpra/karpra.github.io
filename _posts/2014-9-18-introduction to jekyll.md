@@ -1,6 +1,7 @@
 ---
 layout: post
 category : static site generator
+tagline : static site generator
 tags : [jekyll]
 ---
 
