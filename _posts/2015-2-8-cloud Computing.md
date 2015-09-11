@@ -2,7 +2,7 @@
 layout: post
 category : cloud
 tagline : cloud 
-tags : [concept]
+tags : [intro]
 ---
 
 # What is Cloud Computing
@@ -39,5 +39,11 @@ A cloud is called a "public cloud" when the services are rendered over a network
 * ### Hybrid Cloud.
 Hybrid cloud is a composition of two or more clouds (private and/or public) that remain distinct entities but are bound together, offering the benefits of multiple deployment models. Hybrid cloud can also mean the ability to connect collocation, managed and/or dedicated services with cloud resources. It could also be public clouds in more than one cloud providers.
 
-
+# Cloud Providers
+Company | Cloud Type
+------------ | -------------
+Amazon AWS| IaaS,PaaS
+Google AppEngine,CloudEngine | IaaS,PaaS
+Microsoft Azure | Iaas,PaaS
+Rackspace OpenStack | IaaS 
 
