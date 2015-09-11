@@ -3,6 +3,11 @@ layout: post
 category : cheatsheet
 tags : [saltstack]
 ---
+# Contents
+{:.no_toc}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
 First Header  | Second Header
 ------------- | -------------
