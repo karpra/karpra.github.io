@@ -8,18 +8,16 @@ tags : [markdown]
 
 ## Headings
 
-
-
 Headings from `h1` through `h6` are constructed with a `#` for each level:
 
-<pre><code>
+```
 # h1 Heading
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
-</code></pre>
+```
 
 Renders to:
 # h1 Heading
