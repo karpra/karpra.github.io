@@ -28,7 +28,7 @@ It includes both software components (for application developers) and applicatio
 + Maintenancibility.
 
 # Deployment Models.
-+ ##Private Cloud.
-+ ##Public Cloud.
-+ ##Hybrid Cloud.
++ ## Private Cloud.
++ ## Public Cloud.
++ ## Hybrid Cloud.
 
