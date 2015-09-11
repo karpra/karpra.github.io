@@ -16,6 +16,7 @@ tags : [saltstack]
 <a name="emphasis"/>
 
 ## Emphasis
+
 Name | Lunch order | Spicy      | Owes
 ------- | ---------------- | ---------- | ---------:
 Joan  | saag paneer | medium | $11
@@ -25,6 +26,7 @@ Erin   | lamb madras | HOT      | $5
 <a name="table"/>
 
 ## Table
+
 |Syntax | Output |
 |------------ | -------------|
 | ```#h1 Headings (or) <h1> Heading </h1>``` | <h1>Heading</h1>|
