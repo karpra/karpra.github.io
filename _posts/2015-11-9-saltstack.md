@@ -31,7 +31,7 @@ tags : [saltstack]
 
 ## Table
 
-| Syntax | Output |
-| ------------ | ------------- |
-| `#h1 Headings (or) <h1> Hello </h1>` | <h1>Heading</h1> |
+  | Syntax | Output |
+  | ------------ | ------------- |
+  | `#h1 Headings (or) <h1> Helloa </h1>` | <h1>Heading</h1> |
 
