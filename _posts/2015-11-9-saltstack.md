@@ -12,7 +12,7 @@ tags : [saltstack]
 
 |Syntax | Output |
 |------------ | -------------|
-| ```#h1 Heading (or) <h1> Heading </h1>``` | <h1>Heading</h1>|
+| ```#h1 Headings (or) <h1> Heading </h1>``` | <h1>Heading</h1>|
 |```## h2 Heading (or) <h2> Heading </h2>```| <h2>Heading</h2>|
 |```### h3 Heading (or) <h3> Heading </h3>```| <h3>Heading</h3>|
 |```#### h4 Heading (or) <h4> Heading </h4>```| <h4>Heading</h4>|
