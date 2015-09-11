@@ -28,13 +28,7 @@ tags : [saltstack]
 
 ## Table
 
-<div class="table-wrapper" markdown="block">
-
-| Header | Header | 
-|--------|--------|
-| Row    | Row    |
-
-</div>
+{kdexample::} | A simple | table | | with multiple | lines| {kdexample}
 
 | Syntax | Output |
 | ------------ | ------------- |
