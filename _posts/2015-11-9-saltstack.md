@@ -31,7 +31,24 @@ tags : [saltstack]
 
 ## Table
 
-  | Syntax | Output |
-  | ------------ | ------------- |
-  | `#h1 Headings (or) <h1> Helloa </h1>` | <h1>Heading</h1> |
+<table>
+    <thead>
+        <tr>
+            <th>Heading1</th>
+            <th>Heading2</th>
+            <th>Heading3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+        </tr>
+    </tbody>
+</table>
+
+| Syntax | Output |
+| ------------ | ------------- |
+| `#h1 Headings (or) <h1> Helloa </h1>` | <h1>Heading</h1> |
 
