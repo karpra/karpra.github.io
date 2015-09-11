@@ -1,7 +1,8 @@
 ---
 layout: post
 category : devops
-tags : [automation]
+tagline : automation
+tags : [productivity]
 ---
 
 ## What is Vagrant?
