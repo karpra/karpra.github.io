@@ -1,7 +1,8 @@
 ---
 layout: post
-category : [devops,saltstack]
-tags : [cheatsheet]
+category : cheatsheet
+tagline : cheatsheet
+tags : [saltstack]
 ---
 # Contents
 {:.no_toc}
