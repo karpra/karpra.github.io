@@ -23,7 +23,15 @@ It provides a development platform with services to assist application design, i
 It includes both software components (for application developers) and applications (for users). An SaaS application is often a service-oriented program so that it is easy to integrate with other SaaS applications.Software that performs various tasks is not on the client machine. Instead, third-party service providers host and manage the software services in the cloud.
 
 # Key Attributes of Cloud Computing
-+ Auto Scaling.
-+ High Availability.
-+ Monitoring.
++ Agility.
++ Multi tenancy.
++ Scalibility and Elasticity.
++ Monitoring & Performance Optimization Enablement.
 + Security.
++ Maintenancibility.
+
+# Deployment Models.
++ Private Cloud.
++ Public Cloud.
++ Hybrid Cloud.
+
