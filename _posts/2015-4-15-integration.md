@@ -1,7 +1,7 @@
 ---
 layout: post
 category : automation
-tagline : concept
+tagline : continous
 tags : [concept]
 ---
 
