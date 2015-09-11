@@ -10,34 +10,23 @@ tags : [markdown]
 
 Headings from `h1` through `h6` are constructed with a `#` for each level:
 
-``` markdown
-
+<p>
+<code>
 # h1 Heading
-
 ## h2 Heading
-
 ### h3 Heading
-
 #### h4 Heading
-
 ##### h5 Heading
-
 ###### h6 Heading
-
-```
+</code>
+</p>
 
 Renders to:
-
 # h1 Heading
-
 ## h2 Heading
-
 ### h3 Heading
-
 #### h4 Heading
-
 ##### h5 Heading
-
 ###### h6 Heading
 
 HTML:
