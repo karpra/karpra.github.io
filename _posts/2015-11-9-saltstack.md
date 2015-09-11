@@ -11,23 +11,14 @@ tags : [saltstack]
 <a name="headers"/>
 ## Headers
 
-* TOC
-{:toc}
+<a name="emphasis"/>
+## Emphasis
+Name | Lunch order | Spicy      | Owes
+------- | ---------------- | ---------- | ---------:
+Joan  | saag paneer | medium | $11
+Sally  | vindaloo        | mild       | $14
+Erin   | lamb madras | HOT      | $5
 
-# 1
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-## 1.1
-
-# 2
-
-## 2.1
 
 |Syntax | Output |
 |------------ | -------------|
