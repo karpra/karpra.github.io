@@ -23,30 +23,18 @@ tags : [saltstack]
 | col 2 is 	|    centered   	|   $12 	|
 | col 3 is 	| right-aligned 	|    $1 	|
 
-| Header | Header | 
-|--------|--------|
-| Row    | Row    |
 
 <a name="table"/>
 
 ## Table
 
-<table>
-    <thead>
-        <tr>
-            <th>Heading1</th>
-            <th>Heading2</th>
-            <th>Heading3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Data1</td>
-            <td>Data2</td>
-            <td>Data3</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-wrapper" markdown="block">
+
+| Header | Header | 
+|--------|--------|
+| Row    | Row    |
+
+</div>
 
 | Syntax | Output |
 | ------------ | ------------- |
