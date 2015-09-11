@@ -1,5 +1,5 @@
 ---
 layout: post
-category : devops
-tags : [cheatsheet]
+category : cheatsheet
+tags : [saltstack]
 ---
