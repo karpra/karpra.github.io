@@ -5,10 +5,10 @@ tagline : cloud
 tags : [concept]
 ---
 
-# What is Cloud Computing?
+# What is Cloud Computing
 The concept of cloud computing has existed for 50 years, since the beginning of the Internet.It was devised the idea of time-sharing in computers as a utility in 1957.Since then, the concept’s name has undergone several changes: from service bureau, to application service provider, to the Internet as a service, to cloud computing, and to software-defined datacenters, with each name having different nuances. However, the core concept is the same: providing IT services based on the Internet (the cloud).
 
-# Models of Cloud Computing ?
+# Models of Cloud Computing
 
 + ## Infrastucture as a Service (IaaS)
 It virtualizes the data center's computing power, storage, loadbalancers , templatized runtime engines and network connectivity. Users can scale these computing resources up and down on demand dynamically and/or based on a given set of rules upon which action would be taken by the cloud engine.
@@ -28,7 +28,7 @@ It includes both software components (for application developers) and applicatio
 + Maintenancibility.
 
 # Deployment Models.
-+ Private Cloud.
-+ Public Cloud.
-+ Hybrid Cloud.
++ ##Private Cloud.
++ ##Public Cloud.
++ ##Hybrid Cloud.
 
