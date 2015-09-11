@@ -18,10 +18,15 @@ The concept of cloud computing has existed for 50 years, since the beginning of 
 
 # Models of Cloud Computing ?
 + *IaaS*
-Infrastucture as a Service(IaaS) virtualizes the data center's computing power, storage, loadbalancers , templatized runtime engines and network connectivity. Users can scale these computing resources up and down on demand dynamically and/or based on a given set of rules upon which action would be taken by the cloud engine.
-
 + *PaaS*
-Platform as a Service (PaaS) provides a development platform with services to assist application design, implementation, testing, deploy­ment, monitoring, and hosting in the cloud. It requires no software download( although not entirely true may need to download IDE to be able to work with Cloud runtimes) or installation and supports geographi­cally distributed collaborative work.
-
 + *SaaS*
- Software as a Service(SaaS) includes both software components (for application developers) and applications (for users). An SaaS application is often a service-oriented program so that it is easy to integrate with other SaaS applications.Software that performs various tasks is not on the client machine. Instead, third-party service providers host and manage the software services in the cloud.
+ 
+
+## Infrastucture as a Service (IaaS)
+It virtualizes the data center's computing power, storage, loadbalancers , templatized runtime engines and network connectivity. Users can scale these computing resources up and down on demand dynamically and/or based on a given set of rules upon which action would be taken by the cloud engine.
+
+## Platform as a Service (PaaS) 
+It provides a development platform with services to assist application design, implementation, testing, deploy­ment, monitoring, and hosting in the cloud. It requires no software download( although not entirely true may need to download IDE to be able to work with Cloud runtimes) or installation and supports geographi­cally distributed collaborative work.
+
+## Software as a Service(SaaS) 
+It includes both software components (for application developers) and applications (for users). An SaaS application is often a service-oriented program so that it is easy to integrate with other SaaS applications.Software that performs various tasks is not on the client machine. Instead, third-party service providers host and manage the software services in the cloud.
