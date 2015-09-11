@@ -8,8 +8,11 @@ tags : [saltstack]
 {:toc}
 
 # 1
+
 ## 1.1
+
 # 2
+
 ## 2.1
 
 * Will be replaced with the ToC, excluding the "Contents" header
