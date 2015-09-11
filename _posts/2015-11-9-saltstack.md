@@ -4,8 +4,13 @@ category : cheatsheet
 tagline : cheatsheet
 tags : [saltstack]
 ---
-# Contents
-{:.no_toc}
+* TOC
+{:toc}
+
+# 1
+## 1.1
+# 2
+## 2.1
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
