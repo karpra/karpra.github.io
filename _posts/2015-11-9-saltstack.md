@@ -10,9 +10,11 @@ tags : [saltstack]
 [Table](#table)
 
 <a name="headers"/>
+
 ## Headers
 
 <a name="emphasis"/>
+
 ## Emphasis
 Name | Lunch order | Spicy      | Owes
 ------- | ---------------- | ---------- | ---------:
@@ -21,6 +23,7 @@ Sally  | vindaloo        | mild       | $14
 Erin   | lamb madras | HOT      | $5
 
 <a name="table"/>
+
 ## Table
 |Syntax | Output |
 |------------ | -------------|
