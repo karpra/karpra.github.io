@@ -4,6 +4,13 @@ category : cheatsheet
 tagline : cheatsheet
 tags : [saltstack]
 ---
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
+
 * TOC
 {:toc}
 
