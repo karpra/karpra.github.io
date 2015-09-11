@@ -1,6 +1,6 @@
 ---
 layout: post
-category : devops,saltstack
+category : [devops,saltstack]
 tags : [cheatsheet]
 ---
 # Contents
