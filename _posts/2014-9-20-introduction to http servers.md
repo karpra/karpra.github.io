@@ -1,7 +1,7 @@
 ---
 layout: post
 category : server
-tagline : http server
+tagline : concept
 tags : [nginx vs apache]
 ---
 
