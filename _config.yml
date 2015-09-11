@@ -46,7 +46,7 @@ excerpt : teaser
 
 # The number of items displayed per page.
 #
-paginate : 10
+paginate : 5
 
 # The destination of the pagination pages
 #
