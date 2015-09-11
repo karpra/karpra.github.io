@@ -1,6 +1,7 @@
 ---
 layout: post
 category : automation
+tagline : good SDLC practice
 tags : [concept]
 ---
 
