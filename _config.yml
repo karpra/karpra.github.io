@@ -7,6 +7,8 @@ highlighter: pygments
 
 markdown: kramdown
 
+extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
 # The title and tagline is showed on homepage
 #
 title :  /dev/random
