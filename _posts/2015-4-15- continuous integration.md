@@ -31,17 +31,17 @@ Below is a typical CI Workflow
 
 Typically CI Server is scheduled to run nightly builds & deploys to the runtime enviroment ( application server) or any runtime environment hosting the source code artifacts. Apart from the nightly builds it does have feature to initiate a build on the fly once the developer checkin the code into VCS.
 
-CI Server checks out the proect repository(source code, unit test scripts,build scripts) from the VCS & uses the build script to compile the source code and then build the artifact. In the process of CI pipeline it would then deploy to the runtime environment & go ahead with Unit testing the artifact & catalogue the report of success of failure in the CI dashboard.
+CI Server checks out the project repository(source code, unit test scripts,build scripts) from the VCS & uses the build script to compile the source code and then build the artifact. In the process of CI pipeline it would then deploy to the runtime environment & go ahead with Unit testing the artifact & catalogue the report of success of failure in the CI dashboard.
 
 We can configure the CI Server to send out alerts or reports of the build to the email or messaging system of the team responsible for the build. This helps in the local copy of the source code checked in and tested & ready for QA team to exercise overall integrated testing of the application.
 
-Generally each developer before checkin the work to VCS,do a complete build and run (and pass) all unit tests. Integration tests are usually run automatically on a CI server when it detects a new commit.
+Generally each developer before checkin the work to VCS, does a complete build and run (and pass) all unit tests. Integration tests are usually run automatically on a CI server when it detects a new commit.
 
 ## Conclusion
 
-Continuous integration help in detecting the broken build scenarios early, also makes sure all local copies are always checked in VCS project repository eliminating any code or data loss. It aids in faster code building and deployment with less human error & avoid "integration hell", it reduces the "merge hell" by detecting early in the cycle than too late and too many files or repositories to merge.
+Continuous Integration helps in detecting the broken build scenarios early, also makes sure all local copies are always checked in VCS project repository eliminating any code or data loss. It aids in faster code building and deployment with less human error & avoid "integration hell", it reduces the "merge hell" by detecting early in the cycle than too late and too many files or repositories to merge.
 
-Continuous integration involves integrating early and often, so as to avoid the pitfalls of "integration hell". The practice aims to reduce rework and thus reduce cost and time.
+Continuous Integration involves integrating early and often, so as to avoid the pitfalls of "integration hell". The practice aims to reduce rework and thus reduce cost and time.
 
 
 
