@@ -41,10 +41,6 @@ Hybrid cloud is a composition of two or more clouds (private and/or public) that
 
 # Cloud Providers
 
-a|b|c|
-:---:|:---:|:---:|
-1|2| <h1>abc</h1> |
-
 Company|Offering|Model|	              
 :------------------:|:----------------------:|:--------------:|     
 Amazon|Amazon Web Services|IaaS , PaaS| 	       
