@@ -36,3 +36,16 @@ overwrite git repository|git reset ---hard *master* , git pull (or) git stash , 
 clean repository of untracked files & folders|git clean -dfx|
 creating a new branch| git branch *branchname*|
 switching branches| git checkout *branchname*|
+
+## docker
+
+action|command|
+:----:|:----:|
+removing docker image|docker rmi *imagename*|
+list docker images|docker images|
+creating docker image|docker build *imagename* .|
+removing a container|docker rm *containername* |
+starting a container|docker start *containername* |
+stoping a container|docker stop *containername* |
+restarting a container|docker restart *containername* |
+starting a container with port exposed and data volume mounted|docker run -d --name *containername* -p *hostport*:*contport* *imagename*|
