@@ -9,9 +9,12 @@ http://karpra.github.io/search.html
 http://karpra.github.io/sitemap.txt
 http://karpra.github.io/tags.html
 
-http://karpra.github.io/server/2015/01/16/EngineX%20(aka)%20nginx
-http://karpra.github.io/server/2014/09/20/introduction%20to%20http%20servers
-http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant
-http://karpra.github.io/devops/2014/09/19/introduction%20to%20devops
-http://karpra.github.io/static%20site%20generator/2014/09/18/introduction%20to%20jekyll
-http://karpra.github.io/2014/01/16/introduction%20to%20continous%20integration
+http://karpra.github.io/cheatsheet/2015/11/09/%20saltstack
+http://karpra.github.io/cheatsheet/2015/11/09/%20markdown
+http://karpra.github.io/concept/2015/04/15/%20continuous%20integration
+http://karpra.github.io/concept/2015/02/08/%20cloud%20computing
+http://karpra.github.io/server/2015/01/16/%20nginx
+http://karpra.github.io/server/2014/09/20/%20http%20server
+http://karpra.github.io/productivity/2014/09/19/%20vagrant
+http://karpra.github.io/concept/2014/09/19/%20devops
+http://karpra.github.io/static%20site%20generator/2014/09/18/%20jekyll
