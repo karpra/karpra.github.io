@@ -35,4 +35,4 @@ refreshing git repository|git pull origin *master*|
 overwrite git repository|git reset ---hard *master* , git pull (or) git stash , git pull|
 clean repository of untracked files & folders|git clean -dfx|
 creating a new branch| git branch *branchname*|
-switching branches| git checkout *brahcnname*|
+switching branches| git checkout *branchname*|
