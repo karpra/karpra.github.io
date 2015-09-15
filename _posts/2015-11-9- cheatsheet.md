@@ -11,7 +11,7 @@ tags : [git,vagrant]
 
 <a name="vagrant"/>
 
-# vagrant
+## vagrant
 
 action|command|
 :---:|:---:|
@@ -23,7 +23,7 @@ destroy the vm|vagrant destory|
 
 <a name="git"/>
 
-# git
+## git
 
 action|command|
 :----:|:----:|
