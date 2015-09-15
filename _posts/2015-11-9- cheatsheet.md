@@ -7,8 +7,9 @@ tags : [git,vagrant]
 
 ##### Table of Contents  
 [vagrant](#vagrant)  
-[git](#git)
-[docker](#docker)
+[git](#git)  
+[docker](#docker)  
+
 
 <a name="vagrant"/>
 
