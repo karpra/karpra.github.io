@@ -1,7 +1,7 @@
 ---
 layout: post
 category : productivity
-tagline : cheatsheet
+tagline : reference
 tags : [git,vagrant]
 ---
 
