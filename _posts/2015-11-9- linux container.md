@@ -1,6 +1,6 @@
 ---
 layout: post
-category : programming
+category : productivity
 tagline : docker,rock it
 tags : [docker]
 ---
