@@ -2,7 +2,7 @@
 layout: post
 category : productivity
 tagline : reference
-tags : [git,vagrant]
+tags : [git,vagrant,docker]
 ---
 
 ##### Table of Contents  
