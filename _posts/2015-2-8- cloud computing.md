@@ -41,8 +41,13 @@ Hybrid cloud is a composition of two or more clouds (private and/or public) that
 
 # Cloud Providers
 
-* Amazon AWS(IaaS,PaaS)
-* Google AppEngine,CloudEngine (IaaS,PaaS)
-* Microsoft Azure (Iaas,PaaS)
-* Rackspace OpenStack(IaaS)
+| Company   	       |      Offering      	    |  Model 	        |
+|------------------	| ----------------------  |----------       |
+| Amazon    	       |  Amazon Web Services    | IaaS,PaaS 	     |
+| Google    	       |  Google Cloud Engine   	| IaaS,PaaS 	     |
+| Microsoft 	       |  Microsoft Azure 	      | IaaS,PaaS,SaaS 	|
+| Rackspace 	       |  OpenStack 	            | IaaS 	          |
+| IBM       	       |  SoftLayer 	            | IaaS,PaaS       |
+| Linode 	          |  NA        	            | IaaS 	          |
+| Digital Ocean 	   |  NA        	            | IaaS 	          |
 
