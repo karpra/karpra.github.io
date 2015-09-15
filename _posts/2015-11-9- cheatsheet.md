@@ -7,7 +7,8 @@ tags : [git,vagrant]
 
 ##### Table of Contents  
 [vagrant](#vagrant)  
-[git](#git)  
+[git](#git)
+[docker](#docker)
 
 <a name="vagrant"/>
 
@@ -36,6 +37,8 @@ overwrite git repository|git reset ---hard *master* , git pull (or) git stash , 
 clean repository of untracked files & folders|git clean -dfx|
 creating a new branch| git branch *branchname*|
 switching branches| git checkout *branchname*|
+
+<a name="docker"/>
 
 ## docker
 
