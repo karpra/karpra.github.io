@@ -53,3 +53,8 @@ starting a container|docker start *containername* |
 stoping a container|docker stop *containername* |
 restarting a container|docker restart *containername* |
 starting a container with port exposed and data volume mounted|docker run -d --name *containername* -p *hostport*:*contport* *imagename*|
+renaming an existing image|docker tag *imagename*:*latest* *newname*|
+listing current running containers|docker ps|
+listing all containers running & exited | docker ps -a|
+removing all containers which exited | docker rm $(docker ps -a -q)|
+removing all images | docker rmi $(docker images -q)|

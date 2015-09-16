@@ -9,8 +9,8 @@ http://karpra.github.io/search.html
 http://karpra.github.io/sitemap.txt
 http://karpra.github.io/tags.html
 
-http://karpra.github.io/cheatsheet/2015/11/09/%20saltstack
-http://karpra.github.io/cheatsheet/2015/11/09/%20markdown
+http://karpra.github.io/productivity/2015/11/09/%20linux%20container
+http://karpra.github.io/productivity/2015/11/09/%20cheatsheet
 http://karpra.github.io/concept/2015/04/15/%20continuous%20integration
 http://karpra.github.io/concept/2015/02/08/%20cloud%20computing
 http://karpra.github.io/server/2015/01/16/%20nginx
