@@ -50,7 +50,7 @@ action|command|
 :----:|:----:|
 removing docker image|docker rmi **imagename**|
 list docker images|docker images|
-creating docker image|docker build **imagename** .|
+creating docker image|docker build **imagename** |
 removing a container|docker rm **containername** |
 starting a container|docker start **containername** |
 stoping a container|docker stop **containername** |
