@@ -38,7 +38,7 @@ overwrite git repository|git reset ---hard **master** , git pull (or) git stash 
 clean repository of untracked files & folders|git clean -dfx|
 creating a new branch| git branch **branchname**|
 switching branch| git checkout *branchname*|
-deleting branch| git branch -rd origin/**branchname**|
+deleting branch| git branch -rd origin/**branchname** (or) git push origin --delete **branchname**|
 refreshing deleted file| git checkout **filename**|
 
 
