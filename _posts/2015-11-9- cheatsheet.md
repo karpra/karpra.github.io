@@ -41,7 +41,7 @@ switching branch| git checkout *branchname*|
 deleting branch| git branch -rd origin/**branchname** (or) git push origin --delete **branchname**|
 refreshing deleted file| git checkout **filename**|
 creating a branch of an existing branch| git checkout -b **newbranchname** **oldbranchname**|
-merging two branches| git checkout **branchnametobemergedwith** followed by git merge --no-ff **branchnametobemerged** |
+merging two branches| git checkout **branchnametobemergedwith** , git merge --no-ff **branchnametobemerged** |
 
 
 
