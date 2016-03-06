@@ -11,8 +11,7 @@ tags : [git,vagrant,docker]
 [docker](#docker)  
 
 
-<a name="vagrant"/>
-
+<div id="vagrant"/>
 ## vagrant
 
 action|command|
@@ -23,8 +22,7 @@ reloading vagrant config|vagrant reload|
 shutting down the vm|vagrant halt|
 destroy the vm|vagrant destory|
 
-<a name="git"/>
-
+<div id="git"/>
 ## git
 
 action|command|
@@ -43,17 +41,14 @@ refreshing deleted file| git checkout **filename**|
 creating a branch of an existing branch| git checkout -b **newbranchname** **oldbranchname**|
 merging two branches| git checkout **branchnametobemergedwith** , git merge --no-ff **branchnametobemerged** |
 
-
-
-<a name="docker"/>
-
+<div id="docker"/>
 ## docker
 
 action|command|
 :----:|:----:|
 removing docker image|docker rmi **imagename**|
 list docker images|docker images|
-creating docker image|docker build **imagename** |
+creating docker image|docker build -t **imagename** . |
 removing a container|docker rm **containername** |
 starting a container|docker start **containername** |
 stoping a container|docker stop **containername** |

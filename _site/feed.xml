@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>karthik</title>
+		<title>karpra</title>
 		<link></link>
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
@@ -28,7 +28,7 @@
 &lt;a href=&quot;#git&quot;&gt;git&lt;/a&gt;&lt;br/&gt;
 &lt;a href=&quot;#docker&quot;&gt;docker&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&quot;vagrant&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;vagrant&quot;/&gt;&lt;/p&gt;
 
 &lt;h2&gt;vagrant&lt;/h2&gt;
 
@@ -64,7 +64,7 @@
 &lt;/table&gt;
 
 
-&lt;p&gt;&lt;a name=&quot;git&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;git&quot;/&gt;&lt;/p&gt;
 
 &lt;h2&gt;git&lt;/h2&gt;
 
@@ -132,7 +132,7 @@
 &lt;/table&gt;
 
 
-&lt;p&gt;&lt;a name=&quot;docker&quot;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;docker&quot;/&gt;&lt;/p&gt;
 
 &lt;h2&gt;docker&lt;/h2&gt;
 
@@ -154,7 +154,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center;&quot;&gt;creating docker image&lt;/td&gt;
-&lt;td style=&quot;text-align:center;&quot;&gt;docker build &lt;strong&gt;imagename&lt;/strong&gt; &lt;/td&gt;
+&lt;td style=&quot;text-align:center;&quot;&gt;docker build &lt;strong&gt;imagename&lt;/strong&gt; -t . &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center;&quot;&gt;removing a container&lt;/td&gt;
@@ -232,7 +232,7 @@ is checked in the version control system.&lt;/p&gt;
 
 &lt;p&gt;Below is a typical CI Workflow&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/01_16_2015_1.jpg&quot; alt=&quot;process&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/01_16_2015_1.jpg&quot; alt=&quot;process&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Typically CI Server is scheduled to run nightly builds &amp;amp; deploys to the runtime enviroment ( application server) or any runtime environment hosting the source code artifacts. Apart from the nightly builds it does have feature to initiate a build on the fly once the developer checkin the code into VCS.&lt;/p&gt;
 
@@ -481,7 +481,7 @@ vagrant   9206  9185  0 21:31 pts/0    00:00:00 grep --color=auto nginx
 
 &lt;p&gt;The main difference between Apache which is process driven architecture compared to nginx which is event based architecture. So in essence nginx can serve more concurrent users utilizing the computers hardware effectively than apache providing high throughput for static contents. The reason i mentioned static contents is because of the fact that if its dymanic pages like php major bottleneck is in the plugin rather than the webserver itself.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/architecture.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/architecture.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nginx as mentioned uses a event driven architecture , let me go little bit more to explain what it means by event driven architecture. Nginx ( aka Engine X) operates on a single thread , asynchornous &amp;amp; non bloking architecture. Traditional servers used a thread based model for every request a thread is spawnned which is blocking call &amp;amp; utilizes the CPU, Memory till the request is served with a response hence these are reffered as blocking calls. Apache uses thread based architecture &amp;amp; is dependant on the hardware to scale , unlike nginx which uses single threaded non blocking calls to serve the contents &amp;amp; is scalable to use the hardware effectively to produce better throughput service concurent users effectively.&lt;/p&gt;
 

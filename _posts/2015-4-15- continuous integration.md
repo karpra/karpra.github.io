@@ -27,7 +27,7 @@ is checked in the version control system.
 
 Below is a typical CI Workflow 
 
-![process]({{ site.baseurl }}/assets/images/01_16_2015_1.jpg)
+![process]({{ site.baseurl }}/images/01_16_2015_1.jpg)
 
 Typically CI Server is scheduled to run nightly builds & deploys to the runtime enviroment ( application server) or any runtime environment hosting the source code artifacts. Apart from the nightly builds it does have feature to initiate a build on the fly once the developer checkin the code into VCS.
 
