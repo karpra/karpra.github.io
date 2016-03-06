@@ -5,22 +5,22 @@ tagline : intro
 tags : [concept]
 ---
 
-## What is CI (Continous Integration)?
+### what is continous integration
 
 Continuous integration (CI) is the practice in software engineering, of merging all developer working copies into a single integrated Environment several times a day. The main aim of CI is to prevent integration problems, referred to as "integration hell" & to bring in governance of Software Development Life Cycle (SDLC) practices.
 
 CI helps in agile adoption/methodology and is considered as an improvement over frequent integration.
 
-## Why CI?
+### why continous integration
 
 Any Application that goes through a development phase of SDLC adheres to multiple tools usage irrespective of number of developers in different geographies.Although its a good (or) best practice to adhere to these tools during the projects inception even if there is only one developer in the project.
 
-1. Version Control Repository(VCS).
-2. Integrated Development Environment (IDE).
-3. Build Script.
-4. Development.
-5. Unit Testing.
-6. Building & Deploying.
+1. Version Control Repository(VCS)
+2. Integrated Development Environment (IDE)
+3. Build Script
+4. Development
+5. Unit Testing
+6. Building & Deploying
 
 Developers take a copy of repository(base code) on their local machine and start developing , unit testing before the code 
 is checked in the version control system.
@@ -37,7 +37,7 @@ We can configure the CI Server to send out alerts or reports of the build to the
 
 Generally each developer before checkin the work to VCS, does a complete build and run (and pass) all unit tests. Integration tests are usually run automatically on a CI server when it detects a new commit.
 
-## Conclusion
+### conclusion
 
 Continuous Integration helps in detecting the broken build scenarios early, also makes sure all local copies are always checked in VCS project repository eliminating any code or data loss. It aids in faster code building and deployment with less human error & avoid "integration hell", it reduces the "merge hell" by detecting early in the cycle than too late and too many files or repositories to merge.
 

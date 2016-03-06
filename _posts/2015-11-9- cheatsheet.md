@@ -12,7 +12,7 @@ tags : [git,vagrant,docker]
 
 
 <div id="vagrant"/>
-## vagrant
+### vagrant
 
 action|command|
 :---:|:---:|
@@ -23,7 +23,7 @@ shutting down the vm|vagrant halt|
 destroy the vm|vagrant destory|
 
 <div id="git"/>
-## git
+### git
 
 action|command|
 :----:|:----:|
@@ -42,7 +42,7 @@ creating a branch of an existing branch| git checkout -b **newbranchname** **old
 merging two branches| git checkout **branchnametobemergedwith** , git merge --no-ff **branchnametobemerged** |
 
 <div id="docker"/>
-## docker
+### docker
 
 action|command|
 :----:|:----:|
