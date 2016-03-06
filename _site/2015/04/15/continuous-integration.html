@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> continuous integration</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
+  <link rel="stylesheet" href="/style.css">
+  </head>
+<body>
+  <div class="container">
+    <header class="masthead">
+  <h1 class="masthead-title">
+    <a href="/">karthik<span>&#39;s blog</span></a>
+  </h1>
+  <nav class="masthead-nav">
+    
+    <a href="/about">about</a>
+    
+    <a href="/presentation">presentations</a>
+    
+  </nav>
+</header>
+<div class="content post">
+  <h1 class="post-title"> continuous integration</h1>
+  <div class="post-date">
+    <time>15 Apr 2015</time>
+  </div>
+  <h2>What is CI (Continous Integration)?</h2>
+
+<p>Continuous integration (CI) is the practice in software engineering, of merging all developer working copies into a single integrated Environment several times a day. The main aim of CI is to prevent integration problems, referred to as "integration hell" &amp; to bring in governance of Software Development Life Cycle (SDLC) practices.</p>
+
+<p>CI helps in agile adoption/methodology and is considered as an improvement over frequent integration.</p>
+
+<h2>Why CI?</h2>
+
+<p>Any Application that goes through a development phase of SDLC adheres to multiple tools usage irrespective of number of developers in different geographies.Although its a good (or) best practice to adhere to these tools during the projects inception even if there is only one developer in the project.</p>
+
+<ol>
+<li>Version Control Repository(VCS).</li>
+<li>Integrated Development Environment (IDE).</li>
+<li>Build Script.</li>
+<li>Development.</li>
+<li>Unit Testing.</li>
+<li>Building &amp; Deploying.</li>
+</ol>
+
+
+<p>Developers take a copy of repository(base code) on their local machine and start developing , unit testing before the code
+is checked in the version control system.</p>
+
+<p>Below is a typical CI Workflow</p>
+
+<p><img src="/assets/images/01_16_2015_1.jpg" alt="process" /></p>
+
+<p>Typically CI Server is scheduled to run nightly builds &amp; deploys to the runtime enviroment ( application server) or any runtime environment hosting the source code artifacts. Apart from the nightly builds it does have feature to initiate a build on the fly once the developer checkin the code into VCS.</p>
+
+<p>CI Server checks out the project repository(source code, unit test scripts,build scripts) from the VCS &amp; uses the build script to compile the source code and then build the artifact. In the process of CI pipeline it would then deploy to the runtime environment &amp; go ahead with Unit testing the artifact &amp; catalogue the report of success of failure in the CI dashboard.</p>
+
+<p>We can configure the CI Server to send out alerts or reports of the build to the email or messaging system of the team responsible for the build. This helps in the local copy of the source code checked in and tested &amp; ready for QA team to exercise overall integrated testing of the application.</p>
+
+<p>Generally each developer before checkin the work to VCS, does a complete build and run (and pass) all unit tests. Integration tests are usually run automatically on a CI server when it detects a new commit.</p>
+
+<h2>Conclusion</h2>
+
+<p>Continuous Integration helps in detecting the broken build scenarios early, also makes sure all local copies are always checked in VCS project repository eliminating any code or data loss. It aids in faster code building and deployment with less human error &amp; avoid "integration hell", it reduces the "merge hell" by detecting early in the cycle than too late and too many files or repositories to merge.</p>
+
+<p>Continuous Integration involves integrating early and often, so as to avoid the pitfalls of "integration hell". The practice aims to reduce rework and thus reduce cost and time.</p>
+
+</div>
+
+  </div>
+</body>
+</html>
