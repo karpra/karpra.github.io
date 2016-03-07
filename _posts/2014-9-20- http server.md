@@ -5,17 +5,17 @@ tagline : intro
 tags : [nginx vs apache]
 ---
 
-### what is web (aka) http server?
+#### what is web (aka) http server?
 
 The primary function of a web server is to store, process and deliver web pages to clients. The communication between client and server takes place using the Hypertext Transfer Protocol (HTTP). Pages delivered are most frequently HTML documents, which may include images, style sheets and scripts in addition to text content premodinantely static content.
 
 Although it serve the dynamic content of html pages using php , python , asp plugin to serve the html pages with code embedded in them.
 
-### what are available http servers ?
+#### what are available http servers ?
 
 IIS(propietary) , Apache Http Server , nginx , lighthttpd or GWS(propietary) are the popuar webservers in the market. For the sake of this discussion we will pick the key differences between apache and nginx webservers which are open source with more market share.
 
-### difference between web & application server ?
+#### difference between web & application server ?
 
 This is one of most widely asked question for anyone not knowing the difference between the two types of servers. For sake of this discussion let me choose Apache Foundations http server(web server)  versus tomcat(appliaction server).
 
@@ -23,7 +23,7 @@ Application server can also hsot web application and render it like web server ,
 
 Web Server on the other hand has only core http capabilities to render the html content to the client and communicating between the client and the static pages or the application in the backend. It also bring in features of session replication , load balancing between multiple backend applications based on client load , encapsulating your application server behind & protect it from DDOS attacks or back channel hacking through the port or sql injection etc.
 
-### apache Vs nginx
+#### apache Vs nginx
 
 The main difference between Apache which is process driven architecture compared to nginx which is event based architecture. So in essence nginx can serve more concurrent users utilizing the computers hardware effectively than apache providing high throughput for static contents. The reason i mentioned static contents is because of the fact that if its dymanic pages like php major bottleneck is in the plugin rather than the webserver itself.
 
@@ -34,7 +34,7 @@ Nginx as mentioned uses a event driven architecture , let me go little bit more 
 Apache recently added multi processing module to its release , but still uses threaded model. But it has been there for a long time with more documentation , support & has more tools avaialble for different configuration needs & lots of plugins are available which are tested and production ready.
 
 
-### benefits
+#### benefits
 
 Web Servers bring in lots of features and has it place.
 
