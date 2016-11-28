@@ -6,7 +6,7 @@ tags : [docker]
 ---
 
 #### what is linux container(LCX)
-todo
+todo has been todo for a long time.
 
 #### available containers
 todo
