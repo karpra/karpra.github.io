@@ -40,6 +40,8 @@ deleting branch| git branch -rd origin/**branchname** (or) git push origin --del
 refreshing deleted file| git checkout **filename**|
 creating a branch of an existing branch| git checkout -b **newbranchname** **oldbranchname**|
 merging two branches| git checkout **branchnametobemergedwith** , git merge --no-ff **branchnametobemerged** |
+deleting remote branch| git push origin --delete **branchname**|
+deleting local branch| git branch -d **branchname**|
 
 <div id="docker"/>
 #### docker
