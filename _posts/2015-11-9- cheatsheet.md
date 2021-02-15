@@ -9,6 +9,7 @@ tags : [git,vagrant,docker]
 [vagrant](#vagrant)  
 [git](#git)  
 [docker](#docker)  
+[k8s](#k8s)  
 
 
 <div id="vagrant"/>
@@ -61,3 +62,6 @@ listing current running containers|docker ps|
 listing all containers running & exited | docker ps -a|
 removing all containers which exited | docker rm $(docker ps -a -q)|
 removing all images | docker rmi $(docker images -q)|
+
+<div id="k8s"/>
+#### k8s
