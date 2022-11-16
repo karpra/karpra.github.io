@@ -16,14 +16,14 @@
   weight = 10
 
 [[main]]
-  name = "about"
-  pageRef = "about"
-  weight = 20
-
-[[main]]
   name = "tags"
   pageRef = "tags"
   weight = 30
+
+[[main]]
+  name = "about"
+  pageRef = "about"
+  weight = 20
 
 
 # -- Footer Menu --
