@@ -5,6 +5,10 @@ draft: false
 
 ---
 
+{{< alert >}}
+**Warning!** This post is still lame will update soon.
+{{< /alert >}}
+
 After much procrastination i have moved the previous blog running in jekyll to hugo.
 I will document the steps I took to move the content to diff blog engine , but predominately used the git branch strategy to host static pages using hugo framework and migrating my content from jekyll to here.
 
