@@ -11,15 +11,15 @@ Nginx(pronounced EngineX) is one of the most popular web servers in the world an
 
 I am going to create a Virtual Machine which will run Linux OS in our case Ubuntu Linux 64 bit ( Trusty for version 14.04 ) for sake of mimicking an environment as much close to real production system. I have used __Vagrant__ for managing my virtual machine and provisioning it for I can be saved from hastle of downloading a Ubuntu Linux ISO and installing on newly created Virtual Machine. 
 
-## Pre-Requisite
+## pre-requisites
 
-1. __Vagrant__
-2. __VirtualBox__
+1. __vagrant__
+2. __virtualBox__
 
-If you are not familiar with Vagrant ,Please refer to my article on Vagrant & its use [here](http://karpra.github.io/devops/2014/09/19/introduction%20to%20vagrant/)
+If you are not familiar with Vagrant ,Please refer to my article on Vagrant & its use [here](https://karpra.github.io/posts/development/vagrant/)
 
 Although I am provisioning a Ubuntu box , you are free to choose your preference of OS from the list of available
-[Vagrant boxes](http://www.vagrantbox.es/)
+[Vagrant boxes](https://www.vagrantbox.es/)
 
     vagrant init ubuntu/trusty64
     vagrant up
