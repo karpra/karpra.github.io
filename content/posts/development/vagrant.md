@@ -1,5 +1,5 @@
 ---
-title: "Vagrant"
+title: "vagrant"
 date: 2014-09-19T09:01:09-08:00
 draft: false
 tags: ["development","productivity"]
