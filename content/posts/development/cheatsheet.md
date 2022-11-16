@@ -2,7 +2,7 @@
 title: "cheatsheet"
 date: 2015-11-09T09:25:45-08:00
 draft: false
-showDateUpdated: true
+tags: ["development","productivity"]
 ---
 
 ## Table of Contents  
