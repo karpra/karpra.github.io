@@ -2,9 +2,10 @@ title = "karpra"
 
 [author]
 name = "Karthik Prabhakar"
-image = "img/author.jpg"
+image = "profile.jpg"
 headline = "A generally awesome human"
 bio = "A little bit about me"
 links = [
-  { linkedin = "https://www.linkedin.com/in/karpra/" }
+  { linkedin = "https://www.linkedin.com/in/karpra/"},
+  { github  = "https://github.com/karpra" }
 ]

@@ -1,8 +1,11 @@
 ---
-title: "blog using hugo on github pages"
+title: "build your own blog for free"
 date: 2022-11-15T22:16:04-08:00
 draft: false
-tags: ["github pages","hugo"]
+categories: ["blog","documentation"]
+tags: ["hugo"]
+showAuthor: false
+showReadingTime: false
 ---
 
 {{< alert >}}
