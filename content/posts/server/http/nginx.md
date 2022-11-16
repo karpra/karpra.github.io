@@ -1,6 +1,6 @@
 ---
 title: "nginx"
-date: 2015-1-16T09:07:30-08:00
+date: 2015-01-16T09:07:30-08:00
 draft: false
 tags: ["httpserver","loadbalancing"]
 ---
