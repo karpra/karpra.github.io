@@ -52,8 +52,8 @@ enableCodeCopy = false
 [list]
   showBreadcrumbs = true
   showSummary = false
-  showTableOfContents = false
-  showTaxonomies = false
+  showTableOfContents = true
+  showTaxonomies = true
   groupByYear = true
   paginationWidth = 1
 

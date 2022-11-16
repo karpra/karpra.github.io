@@ -5,15 +5,6 @@ draft: false
 tags: ["development","productivity"]
 ---
 
-## Table of Contents  
-[vagrant](#vagrant)  
-[git](#git)  
-[docker](#docker)  
-[k8s](#k8s)  
-
-
-<div id="vagrant"/>
-
 ### vagrant
 
 action|command|
@@ -23,8 +14,6 @@ bringing vm up|vagrant up|
 reloading vagrant config|vagrant reload|
 shutting down the vm|vagrant halt|
 destroy the vm|vagrant destory|
-
-<div id="git"/>
 
 ### git
 
@@ -46,8 +35,6 @@ merging two branches| git checkout **branchnametobemergedwith** , git merge --no
 deleting remote branch| git push origin --delete **branchname**|
 deleting local branch| git branch -d **branchname**|
 
-<div id="docker"/>
-
 ### docker
 
 action|command|
@@ -65,8 +52,6 @@ listing current running containers|docker ps|
 listing all containers running & exited | docker ps -a|
 removing all containers which exited | docker rm $(docker ps -a -q)|
 removing all images | docker rmi $(docker images -q)|
-
-<div id="k8s"/>
 
 ### k8s
 
