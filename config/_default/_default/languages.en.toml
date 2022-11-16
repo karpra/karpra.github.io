@@ -3,7 +3,7 @@ title = "karpra"
 [author]
 name = "Karthik Prabhakar"
 image = "profile.jpg"
-headline = "generally awesome human"
+headline = "my tech rambling"
 bio = "A little bit about me"
 links = [
   { linkedin = "https://www.linkedin.com/in/karpra/"},
