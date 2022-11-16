@@ -18,12 +18,12 @@
 [[main]]
   name = "tags"
   pageRef = "tags"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "about"
   pageRef = "about"
-  weight = 20
+  weight = 30
 
 
 # -- Footer Menu --
